@@ -14,7 +14,7 @@
 
 * cd users/
 
-* cd ~/TIL/ :  til 파일로가기 
+* cd ~/TIL/ :  til 파일로가기 .
 
 * mkdir : 폴더 생성
 
