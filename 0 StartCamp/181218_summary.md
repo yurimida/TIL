@@ -322,3 +322,34 @@ multicampus = forecast('dc1ef520b6e2be5d5f4c2736256745ec', 37.501311, 127.037471
 print(multicampus['currently']['temperature'])
 ```
 
+
+
+
+
+#### git ( git 추가 삭제하기)
+
+
+
+```python
+student@M70323 MINGW64 ~/TIL (master)
+$ ls -a
+ .   ..   .git  '0 StartCamp'
+
+student@M70323 MINGW64 ~/TIL (master)
+$ rm -rf .git/ # git 삭제
+
+student@M70323 MINGW64 ~/TIL
+$ ls -a
+ .   ..  '0 StartCamp'
+
+student@M70323 MINGW64 ~/TIL
+$ git init #git에 넣기
+Initialized empty Git repository in C:/Users/student/TIL/.git/
+
+student@M70323 MINGW64 ~/TIL (master)
+$ ls -a
+ .   ..   .git  '0 StartCamp'
+
+```
+
+* git commit -m '~181218' : 버전이 하나 만들어짐.
