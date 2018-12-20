@@ -4,39 +4,6 @@
 # bonus_number = [7]
 
 
-# b3 = list(set(my_numbers).intersection(real_numbers))
-# b4 = list(set(my_numbers).intersection(bonus_number))
-
-
-# print(b3)
-# print("맞춘 번호 갯수:", len(b3))
-
-# print(b4)
-# print("보너스 번호 갯수:", len(b4))
-
-# if(len(b3)==6):
-#     print("1등입니다.")
-
-# elif(len(b3)==5,len(b4)==1):
-#     print("2등입니다.")
-
-# elif(len(b3)==5):
-#     print("3등입니다.")
-
-# elif(len(b3)==4):
-#     print("4등입니다.")
-
-# elif(len(b3)==3):
-#     print("5등입니다.")
-
-# else:
-#     print("꽝!!!!")
-
-
-
-
-
-
 # import requests
 # import random
 
@@ -55,12 +22,12 @@
 import requests
 import random
 
-def get_lotto():   # def 는 정의를 내리는 것임. 따라서 밑에를 바꾸고 싶으면 def 부터 바꿔야함.
+def get_lotto(draw_no):   # def 는 정의를 내리는 것임. 따라서 밑에를 바꾸고 싶으면 def 부터 바꿔야함.
    
 
-    url = 'https://www.nlotto.co.kr/common.do?method=getLottoNumber&drwNo=837'
+    url = 'https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=' + str(draw_no)
 
-    response = requests.get(url, verify = False)
+    response = requests.get(url)
     lotto_data = response.json()
 
     numbers = []
@@ -69,41 +36,89 @@ def get_lotto():   # def 는 정의를 내리는 것임. 따라서 밑에를 바
        if 'drwtNo' in key:
           numbers.append(value)
 
-          numbers.sort()
-          bonus_number = lotto_data['bnusNo']
+    numbers.sort()
+    bonus_number = lotto_data['bnusNo']
 
-          final_dict = {
-              'numbers' : numbers ,
-              'bonus' : bonus_number
-          }
+    final_dict = {
+        'numbers' : numbers ,
+        'bonus' : bonus_number
+    }
 
-          return final_dict
-         
-
-real_numbers = get_lotto()
-
-print(real_numbers)
-
-# result = am_I_lucky(my_numbers, real_numbers)
-
-#     return 
-#     {
-#      'numbers' : numbers, 
-#      'bonus' : bonus_number
-#     }
-
-# print(numbers.sort, bonus_number)
+    return final_dict
 
 
-# real_numbers = get_lotto()
-# result = am_I_lucky(my_numbers, real_numbers)
+# real_numbers = get_lotto(3)
+
+# print(real_numbers)
+
+
+import requests
+import random
+
+def pick_lotto():
+    return random.sample(range(1, 46), 6)
+
+my_numbers = pick_lotto()
+print(my_numbers)
 
 
 
+#am_I_lucky?
+
+def am_I_lucky(pick, draw):
+    match = set(pick) & set(draw['numbers'])
+    bonus = draw['bonus']
+            
+    print(match)
+    print("맞춘 번호 갯수:", len(match))
+
+    print("보너스 번호:", bonus)
+
+    if(len(match) == 6):
+        print("1등입니다.")
+    elif(len(match) ==5 and bonus == set(pick)):
+        print("2등입니다.")
+        
+    elif(len(match)==5):
+        print("3등입니다.")
+        
+        
+    elif(len(match)==4):
+        print("4등입니다.")
+
+    elif(len(match)==3):
+        print("2등입니다.")
+
+    
+    else:
+        print("꽝")
+
+   
+
+    
+
+am_I_lucky(pick_lotto(), get_lotto(1))
+
+
+
+# # result = am_I_lucky(my_numbers, real_numbers)
+
+# #     return 
+# #     {
+# #      'numbers' : numbers, 
+# #      'bonus' : bonus_number
+# #     }
+
+# # print(numbers.sort, bonus_number)
+
+# # result = am_I_lucky(my_numbers, real_numbers)
 
 
 
 
 
-# my_numbers = random.sample(numbers,6)
-# my_numbers.sort()
+
+
+
+# # my_numbers = random.sample(numbers,6)
+# # my_numbers.sort()
