@@ -96,7 +96,7 @@ def am_I_lucky(pick, draw):
    
 
     
-
+print(get_lotto(1))
 am_I_lucky(pick_lotto(), get_lotto(1))
 
 
