@@ -59,7 +59,7 @@ def pick_lotto():
     return random.sample(range(1, 46), 6)
 
 my_numbers = pick_lotto()
-print(my_numbers)
+    # 여기에서  my_numbers를 print 할 경우 두번 돌아서 번호가 다르게 나오고 있음.
 
 
 
@@ -68,7 +68,8 @@ print(my_numbers)
 def am_I_lucky(pick, draw):
     match = set(pick) & set(draw['numbers'])
     bonus = draw['bonus']
-            
+
+    print(pick)
     print(match)
     print("맞춘 번호 갯수:", len(match))
 

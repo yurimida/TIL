@@ -12,7 +12,7 @@
 ```python
 - a = sorted([3,2,1])
 - def sorted():
--        blahblahblah
+- ​       blahblahblah
 - return ask
 
 
@@ -20,7 +20,7 @@
 b =  [3,2,1].sort()
 def sort()
 
-      blahblahblah
+​      blahblahblah
 ```
 
 * 두 개의 차이점을 유심히 보기.
@@ -155,5 +155,4 @@ def sort()
   # 밑에 이 함수를 위에 정의된 def am_I_lucky(pick, draw)에 알맞게 넣어줘서 돌아가는 것.
   ```
 
-* 
 
