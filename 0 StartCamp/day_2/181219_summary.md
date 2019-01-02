@@ -11,6 +11,8 @@
 
 
 
+
+
 ### 2. list에서 평균 구하기 & dictionary에서 평균 구하기
 
 ```python
