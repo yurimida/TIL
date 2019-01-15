@@ -90,42 +90,125 @@
 
     <hr>
 <h3>TIMETABLE</h3>
-  <table>
-      <tr>
-          <th>TIME</th>
-          <th>INDOOR</th>
-          <th colspan="2">OUTDOOR</th>
-      </tr>
-      <tr>
-          <td></td>
-          <td>소극장</td>
-          <td>잔디마당</td>
-          <td>대공연장</td>
-      </tr>
-      <tr>
-          <td>10:00</td>
-          <td rowspan="2">안녕하신가영</td>
-          <td></td>
-          <td>10cm</td>
-      </tr>
-      <tr>
-          <td>13:00</td>
-          <td rowspan="2">선우정아</td>
-          <td rowspan="2">참깨와 솜사탕</td>
-      </tr>
-      <tr>
-          <td>15:00</td>
-          <td></td>
-          
-      </tr>
-      <tr>
-          <td>17:00</td>
-          <td rowspan="2">크러쉬</td>
-          <td></td>
-          <td rowspan="2">폴킴</td>
-      </tr>
-  </table>
-
+        <table>
+            <tr>
+                <th>TIME</th>
+                <th>INDOOR</th>
+                <th colspan="2">OUTDOOR</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>소극장</td>
+                <td>잔디마당</td>
+                <td>대공연장</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td rowspan="2">안녕하신가영</td>
+                <td></td>
+                <td>10cm</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td rowspan="2">선우정아</td>
+                <td rowspan="2">참깨와 솜사탕</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td rowspan="2">크러쉬</td>
+                <td></td>
+                <td rowspan="2">폴킴</td>
+            </tr>
+        </table>
+        <h3>Form</h3>
+        <p>자기소개하기</p>
     
+        <form action="./index.html">
+            <div>
+                이름: <input name="name" type="text" placeholder="이름을 입력해라!"/>
+            
+            </div>        
+            <div> 
+                나이: <input name="age" type="number"/>
+
+            </div>
+            <div> 
+                Phone:<input name="phone"type="text"/>
+            </div>
+            <div> 
+                자기소개:<textarea name="intro"></textarea>
+            </div>
+            <div> 
+                <input type="submit">
+
+            </div>
+
+
+            
+
+        </form>
+
+        <p>
+            <strong>주문서를 작성해주세요.</strong>
+        </p>
+
+        <form action="">
+            <div>
+                    <label for="username">이름:</label>
+  			<input type="text" name="username" id="username" autofocus>
+            </div>
+            <div>
+                    <label for="date">날짜:</label>
+                    <input id="date" type="date" name="date">
+            </div>
+            <p><strong>1. 샌드위치 선택</strong></p>
+            <!-- radio -->
+            <div>
+              <input type="radio" name="sandwich" value="스테이크" checked />스테이크
+             <input type="radio" name="sandwich" value="이탈리안비엠티" checked /> 이탈리안비엠티
+              <input type="radio" name="sandwich" value="미트볼" checked />미트볼
+         
+            </div>
+
+            <p><strong>2. 사이즈 선택</strong></p>
+            <!-- number -->
+            <input name="size" type="number" placeholder="사이즈를 입력해라!" min="15" max="30" step="15" value="15"/>
+            <div>
+
+            </div>
+            <p><strong>3. 빵</strong></p>
+            <!-- option -->
+            <div>
+                    <select id="bun" name="bun">
+                            <option value="허니오트">허니오트</option>
+                            <option value="플랫브래드">플랫브래드</option>
+                            <option value="파마산">파마산</option>
+                        </select>
+                   
+            </div>
+
+            <p><strong>4. 소스</strong></p>
+            <!-- 체크박스 -->
+            <input id="lettuce" name="option[topping]" type="checkbox" value="핫 칠리">
+            <label for="lettuce">핫 칠리 </label>
+            <input id="lettuce" name="option[topping]" type="checkbox" value="스위트칠리">
+            <label for="lettuce">스위트 칠리</label>
+            <input id="lettuce" name="option[topping]" type="checkbox" value="랜치">
+            <label for="lettuce">랜치</label>
+            <input id="lettuce" name="option[topping]" type="checkbox" value="홀스 래디쉬">
+            <label for="lettuce">홀스 래디쉬</label>
+            <input id="lettuce" name="option[topping]" type="checkbox" value="스위트 어니언">
+            <label for="lettuce">스위트 어니언</label><br><br>
+
+
+            <input type="submit" value="subway">
+            
+
+        </form>
     </body>
 </html>

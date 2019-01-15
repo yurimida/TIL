@@ -394,6 +394,28 @@ set은 집합
 
 
 
+![1547511599733](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1547511599733.png)
+
+이거 그림 쭉 한번 보기 
+
+sequence인 애들의 특징 : 순서가 있음.index 접근이 가능하다는게 포인트.
+
+list 수정가능함.
+
+mutable하게 만들고 싶었던 애들과
+
+immutable 하게 만들고 싶었던 애들
+
+어떻게 구현이 됐을까 생각을 해보면 메서드 중에 값이 바뀌는 애들이 있으면  mutable하기 때문에 바뀌는것.
+
+원본이 바뀐것이 mutable한것.
+
+mut immut의 차이 원본이 바뀌냐 안바뀌냐의 차이!!!!!
+
+
+
+
+
 # 02 control of flow
 
 
