@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <tiltle>visibility_opacity</tiltle>
+    <style>
+        .visible {visibility: :visible;}
+        /*element 보이지 않게 한다. 공간은 남는다.*/
+        .hidden {visibility: hidden;}
+        
+        table, td {border: 1px solid black;}
+        .collapse {
+            /* table에서만 사용하고, 행이나 열을 보이지 않게 한다.*/
+            visibility: collapse;
+           
+            visibility: hidden;
+        }
+
+        div, img{
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            background-color: darkblue;
+            color: white;
+            opacity: 0.5;
+            transition: opacity 1s;
+
+        }
+
+        div:hover, img:hover{
+            opacity: 1.0;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <h1>visibility opacity</h1>
+    <!--visibility-->
+    <h2 class="visible">visibility: visible</h2>
+    <h2 class="hidden">visibility: hidden</h2>
+    <!-- 공간도 사라진다. -->
+    <h2 style="display:none">display:none</h2>
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        
+        <tr class="collapse">
+                <td>A</td>
+                <td>B</td>
+        </tr>
+    </table>
+
+    <div>opacity: 0.5</div>
+    <img src="https://picsum.photos/200/200" alt="random">
+</body>
+</html>
