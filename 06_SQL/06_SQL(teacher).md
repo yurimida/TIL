@@ -19,7 +19,7 @@
 CREATE TABLE <table_name> (
 	<col> DATA_TYPE PRIMARY KEY AUTOINCREMENT,
     <col> DATA_TYPE NOT NULL,
-    <col> DATA_TYPE,
+    <col> DATA_TYPE DEFAULT <value>,
     ...
 );
 ```
@@ -38,6 +38,13 @@ RENAME TO <new_table_name>;
 ```
 
 ### Table 컬럼 추가
+
+```sql
+ALTER TABLE <table_name>
+ADD COLUMN < col_name> DATATYPE;
+```
+
+
 
 ## Data 조작 관련
 
