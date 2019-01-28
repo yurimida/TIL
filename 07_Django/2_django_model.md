@@ -326,4 +326,4 @@ from .models import Band
 admin.site.register(Band)
 ```
 
-이제 다시 관리자 페이지에 접속하면, bands app 의 bands 테이블 관리가 가능하다.접속하여 데이터를 조작해보자!
+이제 다시 관리자 페이지에 접속하면, bands app 의 bands 테이블 관리가 가능하다.접속하여 데이터를 조작해보자!!
