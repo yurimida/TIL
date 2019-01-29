@@ -2,7 +2,7 @@
 
 ## ORM
 
-(거의) 모든 응용프로그램은 데이터를 저장한다. 데이터의 저장을 위해 존재하는 특화 프로그램이 DBMS 며, Django 역시 매우 편리한 데이터 베이스 연동을 지원하며, 프로젝트 생성시 별도의 설정이 없으면 경량형 RDBMS 인 Sqlite3 를 사용하게 되어 있다.
+(거의) 모든 응용프로그램은 데이터를 저장한다. 데이터의 저장을 위해 존재하는 특화 프로그램이 DBMS 며, Django 역시 매우 편리한 데이터 베이스 연동을 지원하며, 프로젝트 생성시 별도의 설정이 없으면 경량형 RDBMS 인 Sqlite3 를 사용하게 되어 있다....
 
 DB는 기본적으로 SQL(Structed Query Language) 을 통해 조작하나, Django 는 python 만으로 DB 조작이 가능하다. Django 뿐만 아니라 대부분의 언어와 프레임워크들은 언어에서의 객체와 RDBMS 에서의 데이터 레코드를 매핑해주는 ORM(Object Relational Mapper) 를 지원한다. Python 에서 사용가능한 여러 ORM들이 존재하지만 (SQLAlchemy, Peewee, SQLObject etc..) 우리는 장고에 특화되어 있는 Django ORM 을 사용할 것이다. Django ORM 은 이름부터 Django에서 사용하기 위해 만들어 졌으며, Django 프로젝트 생성시 자동으로 포함되어 있는 ORM 이다.
 
