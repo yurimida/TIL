@@ -61,7 +61,7 @@ VALUES
 
 ### Data 조회 (Read, Retrieve)
 
-#### 테이블에서 데이터 전체를 모든 col 에 대하여 조회
+#### 테이블에서 데이터 전체를 모든 col 에 대하여 조회..
 
 ```
 SELECT * FROM <table_name>;
