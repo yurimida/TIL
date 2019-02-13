@@ -1,0 +1,19 @@
+{% extends 'movie/base.html' %}
+{% block body %}
+    <form action="post">
+    {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit">
+
+    </form>
+{% endblock %}
+{#    제목: <input type="text" name="title" required><br>#}
+{#    영문: <input type="text" name="title_eng" required><br>#}
+{#    관객수: <input type="text" name="audience"><br>#}
+{#    개봉일: <input type="date" name="open_date"><br>#}
+{#    장르:<input type="text" name="genre"><br>#}
+{#    상영등급:<input type="text" name="watch_grade"><br>#}
+{#    점수:<input type="text" name="score"><br>#}
+{#    포스터 url:<input type="text" name="poster_url"><br>#}
+{#    설명: <textarea name="description" cols="30" rows="10"></textarea><br>#}
+
