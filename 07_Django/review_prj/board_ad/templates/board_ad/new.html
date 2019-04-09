@@ -1,10 +1,20 @@
-{% extends 'board/base.html' %}
+{% extends 'board_ad/base.html' %}
 
 {% block body %}
-    <form action="/board/articles/create/" method="POST">
+    <form action="{% url 'board_ad:posting_create' %}" method="POST">
         {% csrf_token %}
-        <input name="input_title" type="text">
-        <textarea name="input_content" id="" cols="30" rows="10"></textarea>
-        <button type="submit">Create</button>
+        <div>
+            <label for="input_title">Title: </label>
+            <input name="title" id="input_title" type="text">
+        </div>
+
+        <div>
+            <label for="input_content">Content: </label>
+            <textarea name="content" id="input_content" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button type="submit">Create</button>
+        </div>
+
     </form>
 {% endblock %}

@@ -22,5 +22,5 @@ urlpatterns = [
 
     path('board/',include('board.urls')),
     path('movie/',include('movie.urls')),
-    path('articles/',include('board_ad.urls')),
+    path('postings/',include('board_ad.urls')),
 ]

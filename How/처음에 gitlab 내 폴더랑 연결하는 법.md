@@ -22,3 +22,5 @@ origin  https://lab.ssafy.com/yurimida/algorithm.git (push)                     
 `$ git push -u origin master                                                     `
 
 처음 push 할때는 해줘야함.
+
+rm -rf .git ( master 삭제)
