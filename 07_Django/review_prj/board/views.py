@@ -1,36 +1,48 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Article
 
 # Create your views here.
 # id 불필요
 def article_new(request):
-    pass
+    return render(request,'board/new.html')
 
 def article_create(request):
-    pass
+    article = Article()
+    article.title = request.POST.get('input_title')
+    article.content = request.POST.get('input_content')
+    article.save()
+
+    return redirect(f'/board_ad/articles/{article.id}/')
 
 def article_list(request):
-    pass
-
+    articles = Article.objects.all()
+    return render(request, 'board/list.html',{'articles':articles},)
 #id 필요
-def article_detail(request):
-    pass
-def article_edit(request):
-    pass
+def article_detail(request,id):
+    article = Article.objects.get(id=id)
+    return render(request,'board/detail.html',{'article': article},)
+def article_edit(request,id):
+    article = Article.objects.get(id=id)
+    return render(request, 'board/edit.html',{'article':article},)
 
-def article_update(request):
-    pass
+def article_update(request, id):
+    article = Article.objects.get(id=id)
+    article.title = request.POST.get('input_title')
+    article.content = request.POST.get('input_content')
+    article.save()
+    return redirect(f'/board_ad/articles/{article.id}/')
 
-def article_delete(request):
-    pass
-
+def article_delete(request, id):
+    article = Article.objects.get(id=id)
+    article.delete()
+    return redirect('/board_ad/articles/')
 
 
 # def index(request):
-#     return render(request,'board/index.html')
+#     return render(request,'board_ad/index.html')
 #
 # def greeting(request,name,role):
 #     if role == 'admin':
-#         return render(request,'board/gretting.html',{'name':'MASTER USER'},{'name':name.upper()})
+#         return render(request,'board_ad/gretting.html',{'name':'MASTER USER'},{'name':name.upper()})
 #     else:
-#         return render(request,'board/gretting.html',{'iereum': name, 'role':role},)
+#         return render(request,'board_ad/gretting.html',{'iereum': name, 'role':role},)

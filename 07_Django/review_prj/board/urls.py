@@ -1,15 +1,11 @@
 from django.urls import path
 from . import views
-app_name = 'board'
+
 
 urlpatterns = [
-    path('index/',views.index), # Domain/board/index
-    path('greeting/<str:name>/<str:role>/',views.greeting), #domain/board/greeting/yurim
-
-
     # crate
     # /articles/new = > html(새로 작성하는화면)
-    path('articles/new/', views.article_new .),
+    path('articles/new/', views.article_new),
     # /articles/create => DB new record
     path('articles/create/', views.article_create),
     # read

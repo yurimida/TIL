@@ -1,0 +1,11 @@
+{% extends 'board/base.html' %}
+
+{% block body %}
+    <ul>
+        {% for movie in movies %}
+        <li>
+            <a href="/movie/movies/{{ movie.id }}">{{ movie.title }}</a>
+        </li>
+    {
+    </ul>
+{% endblock %}

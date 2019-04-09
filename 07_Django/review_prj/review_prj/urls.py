@@ -19,5 +19,8 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # board로 시작하는 url은 전부 board 아래 있는 urls로 보내라.
+
     path('board/',include('board.urls')),
+    path('movie/',include('movie.urls')),
+    path('articles/',include('board_ad.urls')),
 ]
