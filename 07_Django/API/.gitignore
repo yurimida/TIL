@@ -1,4 +1,7 @@
-venv/
+.venv/
+
 .idea/
+
 __pychace__/
+
 *.splite3
