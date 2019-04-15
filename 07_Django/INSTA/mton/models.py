@@ -32,6 +32,11 @@ class Hotel(models.Model):
         for i in range(n):
             cls.objects.create(name=faker.company())
 
+'''
+
+student 1: N Enrolment N : 1 Lecture
+
+'''
 
 class Student(models.Model):
     name = models.CharField(max_length=30)
