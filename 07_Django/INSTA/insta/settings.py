@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'mton',
     'posts',
     'onetomany',
-    'onetoone',
+    # 'onetoone',
+    'accounts',
 ]
 
 MIDDLEWARE = [

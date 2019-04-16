@@ -1,90 +1,80 @@
 from django.shortcuts import render,redirect,get_object_or_404
 from django.views.decorators.http import require_GET,require_POST,require_http_methods
-from .models import Post
-from .form import PostModelForm
-# # Create your views here.
-#
-# def post_list(request):
-#     posts = Post.objects.all()
-#     return render(request,'posts/list.html',{'posts':posts})
-#
-# @require_http_methods(['GET','POST'])
-# def create_post(request):
-#     # get 방식으로 data를 입력할 form 요청.
-#     if request.method == 'GET':
-#         form = PostModelForm()
-#         return render(request,'posts/form.html',{
-#             'form':form
-#         })
-#     # post 방식으로 입력받은 data를 저장.
-#     else:
-#         # POST 방식으로 넘어온 data를 ModelForm 에 넣는다.
-#         form  = PostModelForm(request.POST)
-#         # data 검증을 한다.
-#         if form.is_vaild():
-#             # 통과하면 저장한다.
-#             form.save()
-#             return redirect('posts:post_list')
-#         else:
-#             # 실패하면 다시 data 입력 form을 준다.
-#             return render(request, 'posts/form.html', {
-#                 'form': form
-#             })
-
-# from django.shortcuts import render, redirect
-# from django.views.decorators.http import require_GET, require_POST, require_http_methods
-# from .models import Post
-# from .forms import PostModelForm
-
+from django.contrib.auth.decorators import login_required
+from .models import Post,Image
+from .form import PostModelForm, ImageModelForm
 
 # 교수님이 코드 다시 깔끔하게 바꿈
-@require_http_methods(['GET','POST'])
-def update_post(request,post_id):
+
+@login_required
+@require_http_methods(['GET', 'POST'])
+def update_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
-    if request.method=='POST':
-        form = PostModelForm(request.POST, request.FILES, instance=post)
-        if form.is_valid():
-            form.save()
+    if request.method == 'POST':
+        post_form = PostModelForm(request.POST, instance=post)
+        if post_form.is_valid():
+            post_form.save()
             return redirect('posts:post_list')
         else:
             pass
     else:
-        form = PostModelForm(instance=post)
-
-    return render(request, 'posts/form.html',{
-        'form':form
+        post_form = PostModelForm(instance=post)
+    return render(request, 'posts/form.html', {
+        'post_form': post_form,
     })
 
-
+@login_required
 @require_http_methods(['GET', 'POST'])
 def create_post(request):
-    # POST 방식으로 넘온 Data 를 ModelForm 에 넣는다.
     if request.method == 'POST':
+
+        post_form = PostModelForm(request.POST)
+
         # POST 방식으로 넘온 Data 를 ModelForm 에 넣는다.
-        form = PostModelForm(request.POST, request.FILES)
+
+        # POST 방식으로 넘온 Data 를 ModelForm 에 넣는다.
+        # form = PostModelForm(request.POST, request.FILES)
+
         # Data 검증을 한다.
-        if form.is_valid():
+        if post_form.is_valid():
             # 통과하면 저장한다.
-            form.save()
+            post = post_form.save()
+            for image in request.FILES.getlist('file'):
+                request.FILES['file'] = image  # 딕셔너리 처럼 사용됨. model form이 dic형식으로 밖에 못읽음
+                image_form = ImageModelForm(files=request.FILES)
+                if image_form.is_valid():
+                    # image = Image()
+                    # image.file = request.FILE.get('skjd')
+                    image = image_form.save(commit=False)
+                    image.post = post
+                    image.save()
+
+
+
             return redirect('posts:post_list')
         else:
             # 실패하면, 다시 data 입력 form 을 준다.
             pass
     # GET 방식으로 요청이 오면,
     else:
-        form = PostModelForm()
+        post_form = PostModelForm()
+    image_form = ImageModelForm()
 
     return render(request, 'posts/form.html', {
-        'form': form,
+        'post_form': post_form,
+        'image_form':image_form,
     })
 
-
+@login_required
 @require_GET
 def post_list(request):
+    if request.GET.get('next'):
+        return redirect(request.GET.get('next'))
     posts = Post.objects.all()
 
     return render(request, 'posts/list.html', {
         'posts': posts,
+
     })
 
 

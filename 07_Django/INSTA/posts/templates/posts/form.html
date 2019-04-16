@@ -6,7 +6,10 @@
     <!-- enctype="multipart/form-data"를 써줘야 image가 들어감 -->
     <form action="" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        {% bootstrap_form form %}
+        {% bootstrap_form post_form %}  <!-- 설치한 패키지-->
+        {% if image_form %}
+            {% bootstrap_form image_form show_label=False %}
+        {% endif %}
         {% buttons %}
             <button type="submit" class="btn btn-primary">Submit</button>
         {% endbuttons %}

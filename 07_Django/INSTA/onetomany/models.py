@@ -30,3 +30,21 @@ class Chapter(TitleDescriptionModel,TimeStampedModel):
 
     def __str__(self):
         return f'{self.id}: {self.book}'
+
+class Student(models.Model):
+    name = models.CharField(max_length=20)
+    def __str__(self):
+        return f'{self.id} {self.name}'
+
+class Message(models.Model):
+    student =models.ForeignKey(Student,on_delete=models.CASCADE)
+    content = models.CharField(max_length=30)
+    def __str__(self):
+        return f'{self.id} {self.content}'
+
+class Reply(models.Model):
+    student = models.ForeignKey(Student,on_delete=models.CASCADE)
+    message = models.ForeignKey(Message,on_delete=models.CASCADE)
+    content = models.CharField(max_length=30)
+    def __str__(self):
+        return f'{self.id} {self.content}'
