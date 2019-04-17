@@ -1,6 +1,6 @@
 <div class="card my-3">
-    {% if post.image_set %}
-        <div id="post{{post.id}}" class="carousel slide carousel-fade" data-ride="carousel">
+    {% if post.image_set.all %}
+        <div id="post{{ post.id }}" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 {% for image in post.image_set.all %}
                     <div class="carousel-item {% if forloop.counter == 1 %} active {% endif %}">
@@ -8,20 +8,46 @@
                     </div>
                 {% endfor %}
             </div>
-            <a class="carousel-control-prev" href="#post{{post.id}}" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#post{{ post.id }}" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#post{{post.id}}" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#post{{ post.id }}" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
     {% else %}
-        <img src="https://picsum.photos/600" alt="..." class="card-img-top" />
+        <img src="https://picsum.photos/600" alt="..." class="card-img-top"/>
     {% endif %}
     <div class="card-body">
-        <p class="card-text">{{post.content}}</p>
-        <a href="{% url 'posts:update_post' post.id %}" class="btn btn-warning">수정</a>
+        <p class="card-text">{{ post.content }} </p>
+        <p class="card-text">{{ post.user }}</p>
+        {% if user == post.user %}
+            <a href="{% url 'posts:update_post' post.id %}" class="btn btn-warning">수정</a>
+
+        {% endif %}
+    </div>
+
+    <div class="card-body">
+
+            {% for comment in post.comment_set.all %}
+                <p><strong>{{ comment.user.username }}</strong> : {{ comment.content }}</p>
+            {% empty %}
+                <p class="card-text">
+                    댓글을 달아주세요!
+                </p>
+            {% endfor %}
+        </p>
+
+    </div>
+    <div class="card-footer">
+        <form action="{% url 'posts:create_comment' post.id %}" method="POST">
+            {% csrf_token %}
+            {{ comment_form.content }}
+            <input type="submit" class="btn btn-light">
+
+
+        </form>
     </div>
 </div>

@@ -49,5 +49,4 @@ ctrl + / 누르고 복사해서 notebook에 붙여넣기 하기
 | id     | book_id     | title     | description |
 | ------ | ----------- | --------- | ----------- |
 | PK,INT | PK,Book,INT | CharField | TextField   |
-|        |             |           |             |
 
