@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.views.decorators.http import require_GET, require_POST, require_http_methods
+from django.views.decorators.http import require_GET, require_POST, require_http_methods,re
 from django.contrib.auth.decorators import login_required
 from .models import Post, Image
 from .form import PostModelForm, ImageModelForm,CommentModelForm
@@ -87,6 +87,7 @@ def post_list(request):
         'posts': posts,
         'comment_form':comment_form,
 
+
     })
 
 @login_required
@@ -108,3 +109,26 @@ def create_comment(request,post_id):
         'comment_form': comment_form,
 
     })
+
+@login_required
+@require_POST
+def toggle_like(request,post_id):
+    user = request.user
+    post = get_object_or_404(Post, id=post_id)
+    if post.like_users.filter(id=user.id).exists():  # 찾으면, [value]/ 없으면, []
+    # if user in post.like_users.all():
+        post.like_users.remove(user)
+    else:
+        post.like_users.add(user)
+
+    return redirect('posts:post_list')
+
+# def delete_like(request,post_id):
+#     user = request.user
+#     post = get_object_or_404(Post, id=post_id)
+#     if post.like_users.filter(id=user.id).exists():  # 찾으면, [value]/ 없으면, []
+#     # if user in post.like_users.all():
+#         post.like_users.remove(user)
+#     else:
+#         post.like_users.add(user)
+

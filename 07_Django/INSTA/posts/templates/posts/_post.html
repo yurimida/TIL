@@ -23,10 +23,21 @@
     <div class="card-body">
         <p class="card-text">{{ post.content }} </p>
         <p class="card-text">{{ post.user }}</p>
+
         {% if user == post.user %}
             <a href="{% url 'posts:update_post' post.id %}" class="btn btn-warning">수정</a>
 
         {% endif %}
+    </div>
+    <div class="card-body">
+        {% if post.like_users.all %}
+            <p>❤ {{ post.like_users.all.count }}</p>
+        {% endif %}
+        <form action="{% url 'posts:toggle_like' post.id %}" method="POST">
+            {% csrf_token %}
+            <button type="submit">좋아요</button>
+        </form>
+
     </div>
 
     <div class="card-body">

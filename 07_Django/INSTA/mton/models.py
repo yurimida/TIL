@@ -25,7 +25,7 @@ class Client(models.Model):
 
 class Hotel(models.Model):
     name = models.CharField(max_length=30)
-    clients = models.ManyToManyField(Client)
+    clients = models.ManyToManyField(Client, related_name='hotels') # related_name 에 연결하면 clients.hotel하면 이제 나옴
 
     @classmethod
     def dummy(cls,n):
@@ -44,7 +44,7 @@ class Student(models.Model):
         return f'{self.id} {self.name}'
 class Lecture(models.Model):
     title = models.CharField(max_length=100)
-    students = models.ManyToManyField(Student)
+    # students = models.ManyToManyField(Student)
     def __str__(self):
         return f'{self.id} {self.title}'
 
