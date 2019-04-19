@@ -1,9 +1,8 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from django.views.decorators.http import require_GET, require_POST, require_http_methods,re
+from django.shortcuts import render, redirect, get_object_or_404,HttpResponseRedirect
+from django.views.decorators.http import require_GET, require_POST, require_http_methods
 from django.contrib.auth.decorators import login_required
 from .models import Post, Image
-from .form import PostModelForm, ImageModelForm,CommentModelForm
-
+from posts.forms import PostModelForm,ImageModelForm, CommentModelForm
 
 # 교수님이 코드 다시 깔끔하게 바꿈
 
@@ -100,7 +99,7 @@ def create_comment(request,post_id):
         comment.user = request.user
         comment.post = post
         comment.save()
-        return redirect('posts:post_list')
+        return HttpResponseRedirect(request.META.get('HTTP_REFERER','/insta/'))
     # todo나 fixme는 pycharm이 highlight해주는 기능임
     # TODO : else => comment 가 유효하지 않으면 어떻게 하지?
     # TODO : else => if comment is not vaild than what?
@@ -112,16 +111,18 @@ def create_comment(request,post_id):
 
 @login_required
 @require_POST
-def toggle_like(request,post_id):
+def toggle_like(request, post_id):
     user = request.user
     post = get_object_or_404(Post, id=post_id)
-    if post.like_users.filter(id=user.id).exists():  # 찾으면, [value]/ 없으면, []
-    # if user in post.like_users.all():
+    # 하나의 포스트에 => 좋아요한 사람들 중 => id==user.id 인 사람을 필터로 찾고 있으면 [value]/ 없으면 []
+    # if post.like_users.filter(id=user.id).exists():
+
+    if user in post.like_users.all():
         post.like_users.remove(user)
     else:
         post.like_users.add(user)
 
-    return redirect('posts:post_list')
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER','/insta/'))
 
 # def delete_like(request,post_id):
 #     user = request.user

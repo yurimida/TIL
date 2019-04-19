@@ -20,9 +20,12 @@
     {% else %}
         <img src="https://picsum.photos/600" alt="..." class="card-img-top"/>
     {% endif %}
+    <div>
+
+    </div>
     <div class="card-body">
         <p class="card-text">{{ post.content }} </p>
-        <p class="card-text">{{ post.user }}</p>
+        <p class="card-text"><a href="{% url 'accounts:user_detail' post.user.username %}">{{ post.user }}</a></p>
 
         {% if user == post.user %}
             <a href="{% url 'posts:update_post' post.id %}" class="btn btn-warning">수정</a>
