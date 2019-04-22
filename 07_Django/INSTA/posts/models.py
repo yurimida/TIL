@@ -11,11 +11,18 @@ from django.conf import settings
 from faker import Faker
 # Create your models here.
 faker = Faker()
+class HashTag(models.Model):
+    content = models.CharField(max_length=20, unique=True)
+
+    def __str__(self):
+        return f'{self.content}'
+
 
 class Post(TimeStampedModel):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     content = models.CharField(max_length=140)
     like_users = models.ManyToManyField(settings.AUTH_USER_MODEL,related_name='like_posts')
+    tags =  models.ManyToManyField(HashTag, blank=True,related_name='posts')
 
     @classmethod
     def dummy(cls,n):
@@ -34,3 +41,5 @@ class Comment(TimeStampedModel):
     content = models.CharField(max_length=100)
     post = models.ForeignKey(Post,on_delete=models.CASCADE)
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
+
+

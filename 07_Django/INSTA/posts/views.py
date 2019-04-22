@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404,HttpResponseRedirect
 from django.views.decorators.http import require_GET, require_POST, require_http_methods
 from django.contrib.auth.decorators import login_required
-from .models import Post, Image
+from .models import Post, Image,HashTag
+from django.contrib import messages
 from posts.forms import PostModelForm,ImageModelForm, CommentModelForm
 
 # 교수님이 코드 다시 깔끔하게 바꿈
@@ -15,6 +16,22 @@ def update_post(request, post_id):
             post_form = PostModelForm(request.POST, instance=post)
             if post_form.is_valid():
                 post_form.save()
+
+                #update hashtag
+                post.tags.clear()  # 기존의 tag() 다 날려줘
+                content = post_form.cleaned_data.get('content')
+                words = content.split(' ')  # 띄어쓰기 기준으로 split
+                for word in words:
+                    if word[0] == '#':
+                        word = word[1:]
+                        tag = HashTag.objects.get_or_create(
+                            content=word)  # HashTag objects, True(있어서 가져왔어요) False(없어서 만들었어요)
+                        post.tags.add(tag[0])
+                        if tag[1]:  # tag가 처음 만들어 진거라면
+                            messages.add_message(request, messages.SUCCESS, f'{tag[0].content}를 처음으로 추가하셨어요! :)')
+
+
+
                 return redirect('posts:post_list')
 
         else:
@@ -49,6 +66,18 @@ def create_post(request):
             post = post_form.save(commit=False)
             post.user = request.user
             post.save()
+
+            # Create hashtag => <input name='tags' /> # hi #ssafy #20층
+            content = post_form.cleaned_data.get('content')
+            words = content.split(' ') # 띄어쓰기 기준으로 split
+            for word in words:
+                if word[0] == '#':
+                    word = word[1:]
+                    tag =  HashTag.objects.get_or_create(content=word) # HashTag objects, True(있어서 가져왔어요) False(없어서 만들었어요)
+                    post.tags.add(tag[0])
+                    if tag[1]: # tag가 처음 만들어 진거라면
+                        messages.add_message(request,messages.SUCCESS,f'{tag[0].content}를 처음으로 추가하셨어요! :)')
+
             for image in request.FILES.getlist('file'):
                 request.FILES['file'] = image  # 딕셔너리 처럼 사용됨. model form이 dic형식으로 밖에 못읽음
                 image_form = ImageModelForm(files=request.FILES)
@@ -124,6 +153,16 @@ def toggle_like(request, post_id):
 
     return HttpResponseRedirect(request.META.get('HTTP_REFERER','/insta/'))
 
+@require_GET
+def tag_posts_list(request,tag_name):
+    tag = get_object_or_404(HashTag, content=tag_name)
+    posts = tag.posts.all()
+    comment_form = CommentModelForm()
+    return render(request,'posts/list.html',{
+        'posts':posts,
+        'comment_form':comment_form,
+        'hi':f'#{tag} 를 포함한 posts 입니다.'
+    })
 # def delete_like(request,post_id):
 #     user = request.user
 #     post = get_object_or_404(Post, id=post_id)
