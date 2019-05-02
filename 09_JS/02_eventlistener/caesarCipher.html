@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>caesarCipher</title>
+</head>
+<body>
+<h1>caesarCipher</h1>
+<div>
+    <label for="user-n">몇칸 밀까요</label>
+    <input type="text" id="user-n">
+</div>
+<div>
+    <label for="user-input">밀어 봅시다</label>
+    <input autofocus type="text" id="user-input">
+</div>
+
+
+
+
+<h1 id="user-output">
+
+</h1>
+
+<script>
+
+    const inputArea = document.querySelector('#user-input');
+    const resultArea = document.querySelector('#user-output');
+    const n = document.querySelector('#user-n');
+
+    inputArea.addEventListener('input', e => {
+        const strArray = [...inputArea.value];
+        const mid = [];
+        for (let i = 0; i < strArray.length; i++){
+             mid.push(String.fromCharCode(strArray[i].charCodeAt()+Number(n.value)));
+        }
+        resultArea.innerHTML = mid.join('');
+    })
+        /*
+         선생님 코드
+         const charArray = inputArea.value.split('');
+         resultArea.innerHTML = inputArea.value;
+         'a'.charCodeAt();
+         String.fromCharCode(97);
+         */
+
+        // resultArea.innerHTML = inputArea.value;
+        // String.fromCharCode(97); // 'a'
+        // String.fromCharCode('a'.charCodeAt() + 1);
+
+
+</script>
+</body>
+</html>

@@ -5,8 +5,6 @@ from django.contrib.auth import login as auth_login, logout as auth_logout
 from posts.forms import CommentModelForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-
-
 from .models import User
 # from django.contrib.auth import get_user_model # 위에랑 둘중하나 선택
 # Create your views here.

@@ -33,13 +33,31 @@
         {% endif %}
     </div>
     <div class="card-body">
-        {% if post.like_users.all %}
-            <p>❤ {{ post.like_users.all.count }}</p>
+    <!-- 좋아요 버튼 1 -->
+{#        {% if post.like_users.all %}#}
+{#            <p class="card-text">❤<span id="like-count-{{ post.id }}">{{ post.like_users.all.count }}</span></p>#}
+{#        {% endif %}#}
+{#        <form action="{% url 'posts:toggle_like' post.id %}" method="POST">#}
+{#            {% csrf_token %}#}
+{#            <button type="submit">좋아용</button>#}
+{#        </form>#}
+
+    <!-- 좋아요 버튼 2 -->
+
+{#    <button class = "like-button" data-id="{{ post.id }}" data-user="{{ post.user }}">#}
+{#        {% if user in post.like_users.all %}#}
+{#            안좋아요#}
+{#        {% else %}#}
+{#            좋아요#}
+{#        {% endif %}#}
+{#    </button>#}
+        {% if user in post.like_users.all %}
+            <i class="activate like-button fas fa-thumbs-up fa-2x " data-id="{{ post.id }}"></i>
+        {% else %}
+            <i class="like-button fas fa-thumbs-up fa-2x " data-id="{{ post.id }}"></i>
         {% endif %}
-        <form action="{% url 'posts:toggle_like' post.id %}" method="POST">
-            {% csrf_token %}
-            <button type="submit">좋아요</button>
-        </form>
+        <span id="like-count-{{ post.id }}">{{ post.like_users.count }}</span>
+
 
     </div>
 

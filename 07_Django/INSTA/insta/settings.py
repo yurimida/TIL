@@ -122,8 +122,8 @@ USE_L10N = True
 
 USE_TZ = False
 
-AUTH_USER_MODEL = 'accounts.User'
 
+AUTH_USER_MODEL = 'accounts.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
