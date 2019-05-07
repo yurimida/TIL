@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .completed{
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <select v-model="status">
+        <option value="all" selected>모두보기</option>
+        <option value="active">안끝남!</option>
+        <option value="completed">끝남!</option>
+    </select>
+    <a v-bind:href="url">google</a> <!-- v-bind 줄여서 : -->
+    <input type="text" v-model="newTodo" v-on:keypress.enter="addTodo">
+    <button @click="addTodo()">+</button>
+    <button v-on:click="deleteTodo()">Clear Completed</button>
+    <div v-if="todos.length">
+        <div v-for="todo in groupTodosByStatus()" v-bind:class="todo.completed ? 'completed':''" v-bind:key="todo.id"> <!---v-for가 우선순위에서 먼저임.-->
+<!--        <div v-for="todo in todos" v-bind:class="{completed: todo.completed}">-->
+        <input type="checkbox" v-model="todo.completed">
+            <span> {{ todo.content }}</span>
+        </div>
+    </div>
+</div>
+<script src="./vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            todos:[
+                {   id : 1,
+                    content:'저녁 메뉴 고민하기',
+                    completed: false,
+
+
+                },
+                {   id : 2,
+                    content:'시험 공부 하기',
+                    completed: false,
+
+
+                },
+                {   id : 3,
+                    content:'집 살 걱정하기',
+                    completed: false,
+
+
+                },
+                {   id : 4,
+                    content:'행복하기',
+                    completed: false,
+
+
+                },
+            ],
+            newTodo: '',
+            status: 'all',
+
+        },
+        methods:{
+            check: function (todo={}) {
+                todo.completed = !todo.completed;
+            },
+            addTodo () {
+                if(this.newTodo){
+                    this.todos.push({
+                        id: Date.now(),
+                        content: this.newTodo,
+                        completed: false,
+
+                    });
+
+                this.newTodo ='';
+                }
+            },
+            deleteTodo () {
+                const newTodos = this.todos.filter(todo => {
+                    return !todo.completed  //합쳐서 True면 newTodos에 들어갈수있음.
+                });
+                this.todos = newTodos
+            },
+
+        },
+        computed:{
+            groupTodosByStatus(){
+                if(this.status === 'active'){
+                    return this.todos.filter(todo => !todo.completed)
+                } else if ( this.status === 'completed'){
+                    return this.todos.filter(todo => todo.completed)
+                } else {
+                    return this.todos;
+                }
+            },
+        }
+    })
+</script>
+</body>
+</html>

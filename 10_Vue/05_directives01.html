@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <h2 v-if="eng">Hi</h2>
+    <h2 v-show="kor">안녕</h2> <!--보여줄꺼냐 말꺼냐 console에 나옴. css 조정만 들어감.-->
+    {{ message }}
+    {{ status ? 'Good' : ' Bad' }}
+    <p>{{ message | capitalize }}</p>
+    <template v-if="status"> <!--template 태그는 v-if랑 쓴다 v-show 랑 안씀.-->
+        <h1>Good</h1>
+        <p>Good to see you</p>
+    </template>
+
+    <p v-if="type === 'A'">A</p>
+    <p v-else-if="type==='B'">B</p>
+    <p  v-else-if="type==='C'">C</p>
+    <p v-else>?</p>
+</div>
+<script src="./vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'ssafy',
+            type: 'D',
+            status: false,
+            eng: true,
+            kor: true,
+        },
+        method: {},
+        filters: {
+            capitalize(value){
+                if(!value) return '';
+                value = value.toString();
+                return value.charAt(0).toUpperCase() + value.slice(1);  // string에서 0번째 자리에 있는 문자를 Uppercase
+            }
+        }
+    })
+</script>
+</body>
+</html>

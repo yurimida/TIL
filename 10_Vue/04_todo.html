@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <a v-bind:href="url">google</a> <!-- v-bind 줄여서 : -->
+    <input type="text" v-model="newTodo" v-on:keypress.enter="addTodo">
+    <button @click="addTodo()">+</button>
+    <button v-on:click="deleteTodo()">Clear Completed</button>
+    <ol v-if="todos.length">
+        <li v-for="todo in todos" v-if="!todo.completed" v-on:click="check(todo)"> <!---v-for가 우선순위에서 먼저임.-->
+            {{ todo.content }}
+        </li>
+        <li v-else v-on:click="check(todo)"><del>{{ todo.content }}</del></li>
+    </ol>
+</div>
+<script src="./vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            todos:[
+                {
+                    content:'저녁 메뉴 고민하기',
+                    completed: true,
+
+
+                },
+                {
+                    content:'시험 공부 하기',
+                    completed: false,
+
+
+                },
+                {
+                    content:'집 살 걱정하기',
+                    completed: false,
+
+
+                },
+                {
+                    content:'행복하기',
+                    completed: false,
+
+
+                },
+            ],
+            newTodo: '',
+            url: 'https://google.com'
+        },
+        methods:{
+            check: function (todo={}) {
+                todo.completed = !todo.completed;
+            },
+            addTodo () {
+                if(this.newTodo){
+                    this.todos.push({
+                        content: this.newTodo,
+                        completed: false,
+
+                    });
+
+                this.newTodo ='';
+                }
+            },
+
+            deleteTodo () {
+                const newTodos = this.todos.filter(todo => {
+                    return !todo.completed  //합쳐서 True면 newTodos에 들어갈수있음.
+                });
+                this.todos = newTodos
+            }
+        },
+    })
+</script>
+</body>
+</html>
