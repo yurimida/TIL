@@ -94,3 +94,24 @@ npm install
 npm run serve
 
 http://52.79.194.10(ec2주소):8080/
+
+
+
+* 서버 계속 실행하는 방법
+
+  ```
+  $ nohup python3 manage.py runserver 0.0.0.0:8000 &
+  $ ps -l
+  
+  0 S  1000 20847 20259  5  80   0 - 23755 wait   pts/0    00:00:00 python3 0 S  1000 20849 20847  6  80   0 - 43989 poll_s pts/0    00:00:00 python3
+  
+  
+  ```
+
+* 서버 종료
+
+  ```
+  $ kill -9 [PID]
+  ```
+
+  
