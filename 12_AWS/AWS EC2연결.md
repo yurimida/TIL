@@ -83,3 +83,14 @@ django settings.py의 allowed_hosts 부분
 으로 들어가면 접속 가능해짐
 ```
 
+----------------------------------------------------------------------------------------------------------------------------------
+
+node js 설치 
+
+[https://yuddomack.tistory.com/entry/%EC%B2%98%EC%9D%8C%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-EC2-nodejs-%EC%84%A4%EC%B9%98](https://yuddomack.tistory.com/entry/처음부터-시작하는-EC2-nodejs-설치)
+
+npm install 
+
+npm run serve
+
+http://52.79.194.10(ec2주소):8080/
