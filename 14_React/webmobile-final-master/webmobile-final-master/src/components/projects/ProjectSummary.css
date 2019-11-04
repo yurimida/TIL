@@ -1,0 +1,6 @@
+div.card.z-depth-0.listproject.project-summary:hover {
+    background-image: none !important
+}
+div.card.z-depth-0.listproject.project-summary:hover .card-content.listproject-content.grey-text.text-darken-3 {
+    visibility: initial !important;
+}

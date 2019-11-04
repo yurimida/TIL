@@ -1,0 +1,31 @@
+SELECT movie.*, Count(movie.id) result , Avg(rating.rating)
+ FROM "main"."api_rating" rating,"main"."api_profile" profile,"main"."api_movie" movie
+WHERE rating.user_id = profile.id and rating.movie_id = movie.id
+GROUP BY movie.id;
+
+SELECT *
+ FROM "main"."api_rating" rating,"main"."api_profile" profile,"main"."api_movie" movie
+WHERE rating.user_id = profile.id and rating.movie_id = movie.id and movie.view_cnt=10
+
+gj = Rating.objects.select_related().values('movie__id','movie__title','movie__genres','movie__average_rating','movie__total_rate','movie__poster_url','movie__summary_id').annotate(total=Count('movie__id'))
+
+gj = Rating.objects.select_related().filter(user__profile__gender='F').values('movie__id','movie__title','movie__genres','movie__average_rating','movie__total_rate','movie__poster_url','movie__summary_id').annotate(id=F('movie__id'),
+title=F('movie__title'),
+genres=F('movie__genres'),
+average_rating=F('movie__average_rating'),
+total_rate=F('movie__total_rate'),
+poster_url=F('movie__poster_url'),
+summary_id=F('movie__summary_id'),total=Count('movie__id'))
+
+id=F('movie__id'),
+title=F('movie__title'),
+genres=F('movie__genres'),
+average_rating=F('movie__average_rating'),
+total_rate=F('movie__total_rate'),
+poster_url=F('movie__poster_url'),
+summary_id=F('movie__summary_id'),
+
+
+
+gj = Rating.objects.select_related().filter().values('movie__id').annotate(id=F('movie__id'),title=F('movie__title'),genres=F('movie__genres'),average_rating=F('movie__average_rating'),total_rate=F('movie__total_rate'),poster_url=F('movie__poster_url'),summary_id=F('movie__summary_id'),view_cnt=Count('movie__id'))
+gj = Rating.objects.select_related().filter().values('movie__id').annotate(id=F('movie__id'),title=F('movie__title'),genres_array=F('movie__genres_array'),average_rating=F('movie__average_rating'),total_rate=F('movie__total_rate'),poster_url=F('movie__poster_url'),summary_id=F('movie__summary_id'),view_cnt=Count('movie__id'))

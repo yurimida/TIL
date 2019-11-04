@@ -1,0 +1,34 @@
+/* div#primary-search-account-menu-mobile{
+    overflow:initial;
+    position:absolute !important;
+} */
+html body div div.container form.white div{
+    margin: 20px;
+}
+html body div div.container form.white{
+    border: 10px solid;
+    border-style: double;
+    border-radius: 50px;
+}
+body{
+    overflow-y: scroll !important;
+}
+.imagelabel img {
+    width: 150px;
+    height: 150px;
+}
+.imagelabel:before {
+    content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/unchecked_checkbox.png");
+    position: absolute;
+    z-index: 100;
+  }
+  :checked+.imagelabel:before {
+    content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/checked_checkbox.png");
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  /*pure cosmetics:*/
+  .imagelabel {
+    margin: 10px;
+  }

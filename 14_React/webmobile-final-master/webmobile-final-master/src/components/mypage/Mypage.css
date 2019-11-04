@@ -1,0 +1,77 @@
+
+.nametag span{
+    margin-left: 15%;
+    font-size: 15px;
+  }
+  .container{
+    position: relative;
+    text-align: center;
+  }
+  .unsplashImage img{
+    border-radius:50%;
+    width: 100%;
+    height: 100%;
+  }
+  .unsplashImage{
+    width:400px;
+    height: 400px;
+  }
+
+  
+  .unsplashText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:10vw;
+    color: white;
+  }
+  
+  .filebox input[type="file"] { 
+    /* 파일 필드 숨기기 */ 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0;
+  
+  }
+  label{
+    color: white;
+  }
+  
+  .imageUpload{
+    justify-content: center;
+  }
+  .container-fluid{
+    margin: 10px;
+  }
+  .image-profile{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 1vw;
+    margin-left:1vw;
+  }
+  .carousel-control{
+    background-image:none !important;
+    filter:none !important;
+  }
+  .mario-profile{
+    margin-left: 50vw;
+    
+  }
+  .mypage{
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 3vw;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }

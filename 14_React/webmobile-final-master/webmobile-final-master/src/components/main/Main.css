@@ -1,0 +1,133 @@
+.sky2, .ground2{
+    position: relative; /*Because we want to position items on and in them!*/
+}
+.sad2{
+    z-index: 1;
+    height: 100vh;
+}
+.topline-mario2{position:absolute; margin-top: 2vw;}
+.topline-world2{position:absolute; margin-top: 2vw; left:55%;}
+.topline-time2{position:absolute; margin-top: 2vw; left: 85%;}
+.bottomline-score2{position:absolute; top: 90px;}
+.bottomline-coin2{position:absolute; top: 80px; left:30%;}
+.bottomline-world2{position:absolute; top: 90px; left:55.7%;}
+.bottomline-time2{position:absolute; top: 90px; left:85.5%;}
+.start{position: absolute; top: 250px; left:40%; font-size: 50px;}
+.tri{position: absolute; top: 240px; left:35%; font-size: 50px;}
+.sky2{
+    height: 90%;
+    background-color: #548CFF;
+}
+.scorebar2{
+    width:100%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 180%;
+    color: white;
+    left:50%;
+    line-height: 0.2;
+}
+.cloud2{
+    position: absolute;
+    height: 20%;
+}
+.cloud2:nth-child(2){
+    top: 120px;
+    -webkit-animation: wind 80s both infinite linear reverse;
+            animation: wind 80s both infinite linear reverse;
+}
+.cloud2:nth-child(3){
+    top: 280px;
+    -webkit-animation: wind 50s both infinite linear reverse;
+            animation: wind 50s both infinite linear reverse;
+}
+.cloud2:nth-child(4){
+    top: 450px;
+    -webkit-animation: wind 30s both infinite linear reverse;
+            animation: wind 30s both infinite linear reverse;
+}
+
+.skyblocks2{
+    position: absolute;
+    top: -250px;
+}
+.bush2{
+    position: absolute;
+    top:-70px;
+}
+    .bush2:nth-child(1){
+        left: 150px;
+    }
+    .bush2:nth-child(2){
+        left: 900px;;
+    }
+    .bush2:nth-child(3){
+        left: 1500px;;
+    }
+.brick2{
+    position: absolute;
+    margin: -2px;
+    left: 480px;
+}
+.brick2:nth-child(1){
+    left: 550px;
+}
+.brick2:nth-child(2){
+    left: 620px;
+}
+.brick2:nth-child(3){
+    left: 690px;
+}
+
+.mario2{
+position: absolute;
+width: 71px;
+height: 72px;
+background: url('https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/mariowalking/result.png') left center;
+top: -68px;
+
+-webkit-animation: play 0.8s steps(4) infinite,
+            run 7s both infinite linear;
+
+        animation: play 0.8s steps(4) infinite,
+            run 7s both infinite linear;
+}
+@-webkit-keyframes play{
+100%{background-position: -284px;}
+}
+@keyframes play{
+100%{background-position: -284px;}
+}
+@-webkit-keyframes run{
+from{left: -200px;}
+to{left: 100%;}
+}
+@keyframes run{
+from{left: -200px;}
+to{left: 100%;}
+}
+@-webkit-keyframes wind{
+from{left: -300px;}
+to{left: 100%;}
+}
+@keyframes wind{
+from{left: -300px;}
+to{left: 100%;}
+}
+
+.blinking{
+	-webkit-animation:blink 0.4s ease-in-out infinite alternate;
+    -moz-animation:blink 0.4s ease-in-out infinite alternate;
+    animation:blink 0.4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

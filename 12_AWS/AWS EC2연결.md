@@ -94,6 +94,9 @@ npm install
 
 npm run serve
 
+* 만약에 sh: 1: vue-cli-service: Permission denied  에러 뜨면
+	rm -rf node_modules 한후 run serve
+
 http://52.79.194.10(ec2주소):8080/
 
 ```
@@ -112,8 +115,11 @@ vue에 register.vue에
 
   ```
   $ nohup python3 manage.py runserver 0.0.0.0:8000 &
+  $ nohup python3 manage.py runserver 0.0.0.0:8000 &(0.0.0.0 으로도 켜야함)
+  13.209.135.201
   $ ps -l
   
+  http://54.180.0.51:8000/api/wines/
   0 S  1000 20847 20259  5  80   0 - 23755 wait   pts/0    00:00:00 python3 0 S  1000 20849 20847  6  80   0 - 43989 poll_s pts/0    00:00:00 python3
   
   
@@ -122,7 +128,9 @@ vue에 register.vue에
 * 서버 종료
 
   ```
+  $ ps -ef 
   $ kill -9 [PID]
+$ kill [processID]
   ```
-
   
+
