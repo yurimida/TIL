@@ -1,0 +1,3 @@
+integer (CommentScore) {
+  description (__DESCRIPTION__)
+}

@@ -1,0 +1,22 @@
+action (QueryMakeWineSweetness) {
+  type(Search)
+  description (와인 당도의 쿼리를 만든다)
+  collect {
+    input (querysweetness) {
+      type (QuerySweetness)
+      min (Required) max (One)
+    }
+    input (querysweetnessscore) {
+      type (QuerySweetnessScore)
+      min (Required) max (One)
+      prompt-behavior (AlwaysSelection)
+
+      default-init {
+        intent {
+          goal: GetWineSweetness
+        }
+      }
+    }
+  }
+  output (QueryWineSweetnessStructure)
+}

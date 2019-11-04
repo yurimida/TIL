@@ -1,0 +1,11 @@
+structure (QueryWineBodyStructure) {
+  description (와인+점수)
+  property (querybody) {
+    type (QueryBody)
+    min (Optional) max (One)
+  }
+  property (querybodyscore) {
+    type (QueryBodyScore)
+    min (Optional) max (One)
+  }
+}

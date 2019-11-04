@@ -1,0 +1,5 @@
+action (GetWineFood) {
+  description (음식 종류를 리턴해준다)
+  type (Search)
+  output (QueryFoodCategory)
+}

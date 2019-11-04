@@ -1,0 +1,42 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (FindWine) {
+      accepted-inputs (querywinesweetnessstructure, querywinebodystructure, queryfoodcategory, queryregion, querytype, $vivContext)
+      local-endpoint ("goal1/FindWine.js")
+    }
+
+
+    action-endpoint (QueryMakeWineSweetness) {
+      accepted-inputs (querysweetness, querysweetnessscore)
+      local-endpoint ("goal1/QuerySweetness.js")
+    }
+    action-endpoint (QueryMakeWineBody) {
+      accepted-inputs (querybody, querybodyscore)
+      local-endpoint ("goal1/QueryBody.js")
+    }
+    action-endpoint (QueryMakeWineFood) {
+      accepted-inputs (queryunknownfood,queryfoodcategory)
+      local-endpoint ("goal1/QueryFood.js")
+    }
+
+
+    action-endpoint (GetWineSweetness) {
+      accepted-inputs ()
+      local-endpoint ("goal1/GetWineSweetnessScore.js")
+    }
+    action-endpoint (GetWineBody) {
+      accepted-inputs ()
+      local-endpoint ("goal1/GetWineBodyScore.js")
+    }
+    
+    action-endpoint (GetWineFood) {
+      accepted-inputs ()
+      local-endpoint ("goal1/GetWineFood.js")
+    }
+
+    action-endpoint (AddMyWine) {
+      accepted-inputs (addwineid, wineinmylist)
+      local-endpoint ("goal1/AddMyWine.js")
+    }
+  }
+}

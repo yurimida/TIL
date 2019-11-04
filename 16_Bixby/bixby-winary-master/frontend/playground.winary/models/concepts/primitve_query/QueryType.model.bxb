@@ -1,0 +1,8 @@
+enum (QueryType) {
+  description (와인 종류)
+  symbol (레드와인)
+  symbol (화이트와인)
+  symbol (스파클링)
+  symbol (로제와인)
+  symbol (주정강화)
+}

@@ -1,0 +1,45 @@
+train (t-o1b6g5mdtmdqgeqvztvmyjfyu) {
+  utterance ("[g:OneWine](드라이한)[v:QuerySweetness:드라이] (참치조림)[v:QueryFoodCategory:'붉은 살 생선']과 어울리는 와인 제안")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571966632714)
+}
+train (t-o7f4ow7r9e4zjn1brekovbi6y) {
+  utterance ("[g:OneWine](오스트레일리아)[v:QueryRegion:호주](드라이)[v:QuerySweetness:드라이]와인 출력해줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963699481)
+}
+train (t-o7yt1zy4978f5s16ozghloh7m) {
+  utterance ("[g:OneWine](바디감 있는데)[v:QueryBody:바디감] (안 단)[v:QuerySweetness:달다]와인을 보여줘")
+  plan (Y+BikCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHIamHKBpUASJOmUn1IZXFJUmlxSWpTKoIxDpW9idipMNYM0DkVgSQU8ksHJ+UA7dPG4Jrg8NbUkL7W4GOEkDQJOgmvBaTVChSohFRAXcjIwMjAxMDOwMLAysDGwM3AARRigYsxAGiTGDqQZwJgBiWYGYhagegYA)
+  last-modified (1571963915941)
+}
+train (t-o827ir7o6yifbm9exbseosyjo) {
+  utterance ("[g:OneWine](탕수육)[v:QueryFoodCategory:'붉은 육류']이랑 어울리는 (독일)[v:QueryRegion:독일]와인 리스트")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962673395)
+}
+train (t-onam28axrakq1xjewm422r159) {
+  utterance ("[g:OneWine] (치킨)[v:QueryFoodCategory:'흰 육류']이랑 어울리는 와인 찾아줘")
+  plan (Y2BmkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1571910664884)
+}
+train (t-oocmlyoda83wlwwpldds5ltmf) {
+  utterance ("[g:OneWine](뉴질랜드)[v:QueryRegion:뉴질랜드](쓴)[v:QuerySweetness:쓰다]출력해줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963593743)
+}
+train (t-osx0e65lcwhboy9xnm43hmkkg) {
+  utterance ("[g:OneWine](가벼운데)[v:QueryBody:바디감] (쓴)[v:QuerySweetness:쓰다] 뭐있어요")
+  plan (Y+BikCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHIamHKBpUASJOmUn1IZXFJUmlxSWpTKoIxDpW9idipMNYM0DkVgSQU8ksHJ+UA7dPG4Jrg8NbUkL7W4GOEkDQJOgmvBaTVChSohFRAXcjIwMjAxMDOwMLAysDGwM3AARRigYsxAGiTGDqQZwJgBiWYGYhagegYA)
+  last-modified (1571964014818)
+}
+train (t-ouhlxtsn8wr1v8c9si3a9nrw7) {
+  utterance ("[g:OneWine](바디감)[v:QueryBody:바디감] (쓴)[v:QuerySweetness:쓰다] 찾아줘")
+  plan (Y+BikCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHIamHKBpUASJOmUn1IZXFJUmlxSWpTKoIxDpW9idipMNYM0DkVgSQU8ksHJ+UA7dPG4Jrg8NbUkL7W4GOEkDQJOgmvBaTVChSohFRAXcjIwMjAxMDOwMLAysDGwM3AARRigYsxAGiTGDqQZwJgBiWYGYhagegYA)
+  last-modified (1571963987870)
+}
+train (t-oz5om7o3puuplq62vwwubkd3a) {
+  utterance ("[g:OneWine](고구마샐러드)[v:QueryFoodCategory:채소]에 곁들일 (독일)[v:QueryRegion:독일]와인 리스트")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962786248)
+}

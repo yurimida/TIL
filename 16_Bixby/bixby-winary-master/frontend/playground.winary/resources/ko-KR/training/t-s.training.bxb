@@ -1,0 +1,75 @@
+train (t-s2uvvg7zydb1knwqp7qpel16e) {
+  utterance ("[g:OneWine](치즈피자)[v:QueryFoodCategory:밀가루]맞는 (칠레산)[v:QueryRegion:칠레]와인 알려주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962907334)
+}
+train (t-s32pozcv1zzqizqj9s9we0zoa) {
+  utterance ("[g:OneWine](볼락)[v:QueryFoodCategory:'흰 살 생선']랑 어울리는 (뉴질랜드산)[v:QueryRegion:뉴질랜드]와인 내놔")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962555993)
+}
+train (t-s3s59n8akeugfyd6m6twi4ypa) {
+  utterance ("[g:OneWine] (독일)[v:QueryRegion:독일] 와인 찾아줘")
+  plan (Y2BmkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1571910793038)
+}
+train (t-sccccbtcyhwbz4bu2ljz0gb6o) {
+  utterance ("[g:OneWine](독일산)[v:QueryRegion:독일] (탄산)[v:QueryType:스파클링] 찾아줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571938959999)
+}
+train (t-sdh82qruh1bi1v566szvh51ks) {
+  utterance ("[g:OneWine](포르투갈산)[v:QueryRegion:포르투갈] (탄산)[v:QueryType:스파클링] 찍어줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571964231811)
+}
+train (t-se9cc27p05milfzomosgsgwe8) {
+  utterance ("[g:OneWine](소세지)[v:QueryFoodCategory:'훈제/염장']와 같이 마실 (레드와인)[v:QueryType:레드와인] 리스트")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571964754001)
+}
+train (t-sevgib33gqutfn4ik8qw9av6m) {
+  utterance ("[g:OneWine] (독일)[v:QueryRegion:독일] 와인 찾아줘")
+  plan (Y2BmkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1571910793049)
+}
+train (t-skmv9drk5j7b58xpeux7rrt07) {
+  utterance ("[g:OneWine](보쌈)[v:QueryFoodCategory:'붉은 육류']이랑 곁들일 (레드와인)[v:QueryType:레드와인] 출력해")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571964941948)
+}
+train (t-skncd4idgv5923ruitq0kktik) {
+  utterance ("[g:OneWine](쌉쌀한)[v:QuerySweetness:쓰다] (로제 와인)[v:QueryType:로제와인] 알려줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLSmHKBpUAypLIglUEXhyRIZ3B5ampJXmpxcXBJUWlySWlRKoMGDuW+idmpKFoYFHCoRKhQJaQiODkfaCUbAyMDEwMzAwsDK5DNAOQxgnksQJoBzIcAZiBmBapkAAA=)
+  last-modified (1571965111151)
+}
+train (t-slaeq0aoegca2nedzapaxxcjm) {
+  utterance ("[g:OneWine](드라이)[v:QuerySweetness:드라이] (프랜치산)[v:QueryRegion:프랑스]와인 추천해줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963792149)
+}
+train (t-sn6tjp04qprc02gmqilra2wsu) {
+  utterance ("[g:OneWine](오리주물럭)[v:QueryFoodCategory:'흰 육류']이랑 어울리는 (포르투갈)[v:QueryRegion:포르투갈]와인 목록보여줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962718125)
+}
+train (t-so4plkkdggen6y0r78iem2b0h) {
+  utterance ("[g:OneWine](멸치)[v:QueryFoodCategory:'붉은 살 생선']와 함께마실 (포르투갈)[v:QueryRegion:포르투갈]와인 목록보여줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962616674)
+}
+train (t-sscr28t25f3279on2m3vepp23) {
+  utterance ("[g:OneWine] (뉴질랜드)[v:QueryRegion:뉴질랜드] 와인 찾아줘")
+  plan (Y2BmkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1571910793059)
+}
+train (t-sy124x6gi5y89phah1uttzchc) {
+  utterance ("[g:OneWine](파파야)[v:QueryFoodCategory:과일]랑 어울리는 (스페인산)[v:QueryRegion:스페인]와인 찾아주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962740965)
+}
+train (t-syicxwtnoqn0ojkhp7nenjhse) {
+  utterance ("[g:OneWine](망고스틴)[v:QueryFoodCategory:과일]이랑 어울리는 (호주)[v:QueryRegion:호주]와인 보여주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962741612)
+}

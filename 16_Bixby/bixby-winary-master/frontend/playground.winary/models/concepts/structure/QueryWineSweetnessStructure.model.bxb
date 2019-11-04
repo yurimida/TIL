@@ -1,0 +1,11 @@
+structure (QueryWineSweetnessStructure) {
+  description (와인+점수)
+  property (querysweetness) {
+    type (QuerySweetness)
+    min (Optional) max (One)
+  }
+  property (querysweetnessscore) {
+    type (QuerySweetnessScore)
+    min (Optional) max (One)
+  }
+}

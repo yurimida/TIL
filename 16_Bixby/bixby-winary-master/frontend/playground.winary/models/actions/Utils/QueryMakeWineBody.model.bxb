@@ -1,0 +1,22 @@
+action (QueryMakeWineBody) {
+  type(Search)
+  description (와인 바디의 쿼리를 만든다)
+  collect {
+    input (querybody) {
+      type (QueryBody)
+      min (Required) max (One)
+    }
+    input (querybodyscore) {
+      type (QueryBodyScore)
+      min (Required) max (One)
+      prompt-behavior (AlwaysSelection)
+
+      default-init {
+        intent {
+          goal: GetWineBody
+        }
+      }
+    }
+  }
+  output (QueryWineBodyStructure)
+}

@@ -1,0 +1,3 @@
+integer (WineAlcoholVal) {
+  description (__DESCRIPTION__)
+}

@@ -1,0 +1,67 @@
+structure (OneWine) {
+  description (One Wine)
+  property (winefood) {
+    type (WineFood)
+    min (Optional) max (Many)
+  }
+  property (winebrand) {
+    type (WineBrand)
+    min (Optional) max (One)
+  }
+  property (winesize) {
+    type (WineSize)
+    min (Optional) max (One)
+  }
+  property (winekrname) {
+    type (WineKRName)
+    min (Optional) max (One)
+  }
+  property (winevarietal) {
+    type (WineVarietal)
+    min (Optional) max (One)
+  }
+  property (wineenname) {
+    type (WineENName)
+    min (Optional) max (One)
+  }
+  property (winetastebody) {
+    type (WineTasteBody)
+    min (Optional) max (One)
+  }
+  property (winetemperature) {
+    type (WineTemperature)
+    min (Optional) max (One)
+  }
+  property (wineid) {
+    type (WineId)
+    min (Optional) max (One)
+  }
+  property (winealcohol) {
+    type (WineAlcohol)
+    min (Optional) max (One)
+  }
+  property (winecategory) {
+    type (WineCategory)
+    min (Optional) max (One)
+  }
+  property (wineimage) {
+    type (WineImage)
+    min (Optional) max (One)
+  }
+  property (wineregion) {
+    type (WineRegion)
+    min (Optional) max (Many)
+  }  
+  property (winetastesweetness) {
+    type (WineTasteSweetness)
+    min (Optional) max (One)
+  }
+  property (winedescription) {
+    type (WineDescription)
+    min (Optional) max (One)
+  }
+  property (wineinmylist) {
+    type (WineInMyList)
+    min (Optional) max (One)
+  }
+}

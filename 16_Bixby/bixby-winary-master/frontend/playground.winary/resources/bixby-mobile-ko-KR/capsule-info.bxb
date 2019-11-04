@@ -1,0 +1,13 @@
+capsule-info {
+  display-name (와이너리)
+  developer-name (7드런)
+  icon-asset (/images/wine002.png)
+  description (와이너리는 와인을 잘 모르는 분들에게 와인 정보를 제공합니다.)
+  privacy-policy-url ("http://13.125.235.118:8000/api/privacy_policy/")
+  search-keywords {
+    keyword (와인)
+    keyword (와인 정보)
+    keyword (와이너리)
+  }
+  dispatch-name (와이너리)
+}

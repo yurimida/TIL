@@ -1,0 +1,13 @@
+enum (QueryFoodCategory) {
+  description (__DESCRIPTION__)
+  symbol (해산물)
+  symbol (흰 살 생선)
+  symbol (붉은 살 생선)
+  symbol (붉은 육류)
+  symbol (흰 육류)
+  symbol (과일)
+  symbol (채소)
+  symbol (치즈)
+  symbol (밀가루)
+  symbol (훈제/염장)
+}

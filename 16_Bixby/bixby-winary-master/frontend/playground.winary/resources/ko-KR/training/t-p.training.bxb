@@ -1,0 +1,80 @@
+train (t-p1i6kwskkl5rweuigmsr32pbx) {
+  utterance ("[g:OneWine](수육)[v:QueryFoodCategory:'붉은 육류']과 어울린 (뉴질랜드산)[v:QueryRegion:뉴질랜드]와인 출력해줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962669593)
+}
+train (t-p2y7a4aeei2spy2vle0cwkklm) {
+  utterance ("[g:OneWine](양파튀김)[v:QueryFoodCategory:채소]과 겯들일 (뉴질랜드산)[v:QueryRegion:뉴질랜드]와인 출력해줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962794002)
+}
+train (t-p6k088kjb7lfo4blu8ymqfws3) {
+  utterance ("[g:OneWine](무거운데)[v:QueryBody:바디감] (단)[v:QuerySweetness:달다]거 뭐있어")
+  plan (Y+BikCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHIamHKBpUASJOmUn1IZXFJUmlxSWpTKoIxDpW9idipMNYM0DkVgSQU8ksHJ+UA7dPG4Jrg8NbUkL7W4GOEkDQJOgmvBaTVChSohFRAXcjIwMjAxMDOwMLAysDGwM3AARRigYsxAGiTGDqQZwJgBiWYGYhagegYA)
+  last-modified (1571963956642)
+}
+train (t-pdk2lkhw0dh2uv932wu8m0z8b) {
+  utterance ("[g:OneWine](빵)[v:QueryFoodCategory:밀가루]랑 어울리는 (호주)[v:QueryRegion:호주]와인 보여주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962906756)
+}
+train (t-pefzhplu2y3adln57ebqxrhg4) {
+  utterance ("[g:OneWine] (해산물)[v:QueryFoodCategory:해산물]이랑 어울리는 와인 찾아줘")
+  plan (Y2BmkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1571910787154)
+}
+train (t-pfbki8ywkj3bbvbvlfqcsy48n) {
+  utterance ("[g:OneWine](씁쌀한)[v:QuerySweetness:쓰다] (독일)[v:QueryRegion:독일]와인 리스트")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963658598)
+}
+train (t-pgtdqnazioq53j39d8lmap5g8) {
+  utterance ("[g:OneWine](드라이한데)[v:QuerySweetness:드라이] (스페인산)[v:QueryRegion:스페인] 추천")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963825028)
+}
+train (t-pl7tpos1yjd1azbn9g9gblmi8) {
+  utterance ("[g:OneWine](나쵸)[v:QueryFoodCategory:밀가루]에 맞는 (포르투갈)[v:QueryRegion:포르투갈]와인 목록보여줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962923758)
+}
+train (t-plz2wqush6c7kagvybv13lt57) {
+  utterance ("[g:OneWine](USA)[v:QueryRegion:미국](씁쌀한)[v:QuerySweetness:쓰다]와인 출력해줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963533568)
+}
+train (t-pn3d7bjvum28oxxr31tvl3vos) {
+  utterance ("[g:OneWine](비엔나)[v:QueryFoodCategory:'훈제/염장']에 잘맞는 (칠레산)[v:QueryRegion:칠레]와인 알려주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962973676)
+}
+train (t-pr9295zzt1iuhoryeqaaitzjj) {
+  utterance ("[g:OneWine](치즈 플래터)[v:QueryFoodCategory:치즈]랑 어울리는 (씁쓸한)[v:QuerySweetness:쓰다] 와인 추천")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571966303244)
+}
+train (t-prwwrz72wpjfrbsopmbznf6q5) {
+  utterance ("[g:OneWine](대게찜)[v:QueryFoodCategory:해산물]랑 어울리는 (가벼운)[v:QueryBody:바디감] 와인 보여주세요")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQQOHIpAJTvkplcElRaXJJaVFuI3zTcxOhalmkMahCCypgEcyODkfaAcbAyMDEwMzAwsDK5DNAOQxgnksQJoBzIcAZiBmBapkAAA=)
+  last-modified (1571967031924)
+}
+train (t-ps7ki4rznf9fgq9undzh6ptik) {
+  utterance ("[g:OneWine](포르투갈산)[v:QueryRegion:포르투갈] (로제 와인)[v:QueryType:로제와인] 뭐 있어")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571964248090)
+}
+train (t-pvye3cus5lfrjikybyjvyo250) {
+  utterance ("[g:OneWine] (주정강화)[v:QueryType:주정강화] 찾아줘")
+  plan (Y2BmkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLSmHKBpUAypLIglYGJgRGIGYAkIwMIMEEwAA==)
+  last-modified (1571910791663)
+}
+train (t-pwtv9lpkuscc7w2cvbrc55m1z) {
+  utterance ("[g:OneWine](감바스 알 아히요)[v:QueryFoodCategory:해산물]와 같이 마실 (화이트 와인)[v:QueryType:화이트와인] 출력")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571964455406)
+}
+train (t-pyc65zzivwltfmpna74pj6bxd) {
+  utterance ("[g:OneWine](바디감있는)[v:QueryBody:바디감] (남아프리카공화국)[v:QueryRegion:남아프리카공화국]와인 추천")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQQOHNEivU35KZXBJUWlySWlRKoMyDpW+idmpMNUM0jgUgSUV8EgGJ+cD7WBjYGRgYmBmYGFgBbIZgDxGMI8FSDOA+RDADMSsQJUMAA==)
+  last-modified (1571963164267)
+}

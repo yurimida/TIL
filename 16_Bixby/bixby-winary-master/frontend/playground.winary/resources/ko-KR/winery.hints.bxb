@@ -1,0 +1,15 @@
+ hints {
+  uncategorized {
+    utterance (남아공 와인 찾아줘)
+    utterance (달콤한 와인 보여줘)
+    utterance (안 단 와인 알려줘)
+    utterance (레드와인 알려줘)
+    utterance (연어에 어울리는 와인 추천해줘)
+    utterance (바디감 있는 와인 뭐 있어?)
+    utterance (프랑스산 화이트 와인 알려줘)
+    utterance (달지 않은 레드 와인 보여줘)
+    utterance (달콤한 스파클링 와인 추천해줘)
+    utterance (소고기와 곁들일 레드와인 찾아)
+    utterance (즐겨찾기한 와인 보여줘)
+  }
+}

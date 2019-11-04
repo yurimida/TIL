@@ -1,0 +1,27 @@
+action (FindWine) {
+  description (Find wine and give list)
+  collect {
+    input (querywinesweetnessstructure) {
+      type (QueryWineSweetnessStructure)
+      min (Optional) max (One)
+    }
+    input (querywinebodystructure) {
+      type (QueryWineBodyStructure)
+      min (Optional) max (One)
+    }
+    input (queryfoodcategory) {
+      type (QueryFoodCategory)
+      min (Optional) max (One)
+    }
+    input (queryregion) {
+      type (QueryRegion)
+      min (Optional) max (One)
+    }
+    input (querytype) {
+      type (QueryType)
+      min (Optional) max (One)
+    }
+  }
+  type (Search)
+  output (OneWine)
+}

@@ -1,0 +1,6 @@
+enum (QuerySweetness) {
+  description (맛종류)
+  symbol (달다)
+  symbol (쓰다)
+  symbol (드라이)
+}

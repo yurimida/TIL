@@ -1,0 +1,9 @@
+enum (ProfileField) {
+  symbol (firstName)
+  symbol (lastName)
+  symbol (structuredName)
+  symbol (firstAndLastName)
+  symbol (phoneInfo)
+  symbol (emailInfo)
+  symbol (addressInfo)
+}

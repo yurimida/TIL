@@ -1,0 +1,57 @@
+layout-macro-def (wine-image-card) {
+  params {
+    param (wine) {
+      type (OneWine)
+      min (Required) max (One)
+    }
+  }
+  content {
+    image-card {
+      aspect-ratio (4:3)
+      image-url ("[#{value(wine.wineimage)}]")
+      image-object-fit (Contain)
+      title-area {
+        halign (Start)
+        slot1 {
+          text {
+            value ("#{value(wine.winekrname)}")
+            style (Detail_L)
+          }
+        }
+        slot2 {
+          single-line {
+            text {
+              value ("#{value(wine.wineenname)}")
+              style (Detail_M)
+            }
+          }
+        }
+        slot3 {
+          single-line {
+            text {
+              value ("#{value(wine.winecategory)}  |   #{value(wine.winealcohol)}%")
+              style (Detail_M)
+            }
+            spacer
+            if (wine.wineinmylist) {
+              image {
+                shape (Square)
+                style (Detail_M)
+                url (/images/star.png) 
+              }
+              text {
+                value("즐겨찾기 한 와인")
+                style(Detail_M)
+              }
+            } else {
+              text {
+                value("")
+                style(Detail_M_Soft)
+              }
+            }  
+        }
+      }
+    }
+  }
+}
+}

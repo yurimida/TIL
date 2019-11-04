@@ -1,0 +1,22 @@
+action (QueryMakeWineFood) {
+  type(Search)
+  description (와인 음식의 쿼리를 만든다)
+  collect {
+    input (queryunknownfood) {
+      type (QueryUnknownFood)
+      min (Optional) max (One)
+    }
+    input (queryfoodcategory) {
+      type (QueryFoodCategory)
+      min (Required) max (One)
+      prompt-behavior (AlwaysSelection)
+
+      default-init {
+        intent {
+          goal: GetWineFood
+        }
+      }
+    }
+  }
+  output (QueryFoodCategory)
+}

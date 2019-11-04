@@ -1,0 +1,15 @@
+structure (WineComment) {
+  description (와인에 대한 댓글)
+  property (commentname) {
+    type (CommentName)
+    min (Required) max (One)
+  }
+  property (commentcontent) {
+    type (CommentContent)
+    min (Required) max (One)
+  }
+  property (commentscore) {
+    type (CommentScore)
+    min (Optional) max (One)
+  }
+}

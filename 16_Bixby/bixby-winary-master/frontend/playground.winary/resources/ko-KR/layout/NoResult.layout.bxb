@@ -1,0 +1,26 @@
+layout-macro-def (no-result) {
+	params {
+		param (wine) {
+			type (OneWine)
+			min (Optional) max (One)
+		}
+	}
+
+  content {
+    section {
+      content {
+        image{
+            url (/images/Empty-Wine-Glasses.jpg)
+            aspect-ratio(4:3)
+            object-fit (Contain)
+        }
+        single-line {
+            text {
+              value("해당 검색 결과가 없습니다 :(")
+              style (Title_XS)
+            }
+        }
+      }
+    }
+  }
+}

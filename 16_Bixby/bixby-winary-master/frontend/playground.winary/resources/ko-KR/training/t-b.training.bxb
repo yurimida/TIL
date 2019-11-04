@@ -1,0 +1,65 @@
+train (t-b0968meiwfm4nfwruqy298zzp) {
+  utterance ("[g:OneWine](아르헨)[v:QueryRegion:아르헨티나] (주정강화와인)[v:QueryType:주정강화] 알려줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571938938450)
+}
+train (t-b5d9xjfebqa3lu86qhs74hchh) {
+  utterance ("[g:OneWine](독일산)[v:QueryRegion:독일] (무거운)[v:QueryBody:바디감]와인 리스트")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQQOHNEivU35KZXBJUWlySWlRKoMyDpW+idmpMNUM0jgUgSUV8EgGJ+cD7WBjYGRgYmBmYGFgBbIZgDxGMI8FSDOA+RDADMSsQJUMAA==)
+  last-modified (1571963286008)
+}
+train (t-b6d2n1gqzypm8xx38lhlckek4) {
+  utterance ("[g:OneWine](무거운데)[v:QueryBody:바디감] (추어탕)[v:QueryFoodCategory:'흰 살 생선']과 어울리는 와인 찾아")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQQOHIpAJTvkplcElRaXJJaVFuI3zTcxOhalmkMahCCypgEcyODkfaAcbAyMDEwMzAwsDK5DNAOQxgnksQJoBzIcAZiBmBapkAAA=)
+  last-modified (1571967251432)
+}
+train (t-b6vbhw0rn5ntrmx17voeo3ygq) {
+  utterance ("[g:OneWine] (파인애플)[v:QueryFoodCategory:과일]랑 어울리는 와인 찾아줘")
+  plan (Y2BmkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1571912262643)
+}
+train (t-bd7nc4ov8a797zm0asodb5rvz) {
+  utterance ("[g:OneWine](달콤하고)[v:QuerySweetness:달다] (참치)[v:QueryFoodCategory:'붉은 살 생선']랑 같이 마실 와인 찍어줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571966569057)
+}
+train (t-be03rv6qda4lnwh0kx9pw6j92) {
+  utterance ("[g:OneWine](쓴)[v:QuerySweetness:쓰다] (스페인산)[v:QueryRegion:스페인]와인 추천")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963623897)
+}
+train (t-bgfb541x9oshbkhxgst41bojr) {
+  utterance ("[g:OneWine](무거운)[v:QueryBody:바디감] (달짝지근)[v:QuerySweetness:달다]와인을 알려줘")
+  plan (Y+BiEC3PzEstqtSDUv55qeFAFoMYqrBbZl4KWFwFVTywFEiCJJzyUyqDS4pKk0tKi1IZ5LGo8k3MToWpZBDHogAsIYNDIjg5H2iuJg7bg8tTU0vyUouLEU5QweMEuHKs1iFkFfHJQlzEycDIwMTAzMDCwMrAxsDOwAEUYYCKMQNpkBg7kGYAYwYkmhmIWYDqGQA=)
+  last-modified (1571981685378)
+}
+train (t-bm96wdhylj19jjaypl2evz5qx) {
+  utterance ("[g:OneWine](고등어구이)[v:QueryFoodCategory:'붉은 살 생선']와 함께 (캐나다)[v:QueryRegion:캐나다]와인 알려줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962572713)
+}
+train (t-bqek8a6097yqfm6mrb2hytt56) {
+  utterance ("[g:OneWine](꾸꾸까까)[v:QueryUnknownFood]와 먹기 좋은 와인 추천해줘")
+  plan (Y2BjkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6gSpyLfxGywDSDFxJmkhENRaF52Xn55HtggVgZGBiYGZgYWIIsBymYG0gxgDAJMQAyUAwA=)
+  last-modified (1571968653518)
+}
+train (t-bvn1fjyfdiy5g52zqnpt03rh6) {
+  utterance ("[g:OneWine](이탈리아산)[v:QueryRegion:이탈리아] (화이트)[v:QueryType:화이트와인] 추천")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571938656088)
+}
+train (t-bx9qowjj77i26ph1qy312lznr) {
+  utterance ("[g:OneWine](포르투갈산)[v:QueryRegion:포르투갈] (화이트와인)[v:QueryType:화이트와인] 찍어줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571964226275)
+}
+train (t-bxnwrx3amp9q4uv84lgmznege) {
+  utterance ("[g:OneWine](리코타치즈)[v:QueryFoodCategory:치즈]에 곁들일 (이태리)[v:QueryRegion:이탈리아]와인 보여주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962811115)
+}
+train (t-byp3vmb06s8rmntz2crf4kzj0) {
+  utterance ("[g:OneWine](고구마샐러드)[v:QueryFoodCategory:채소]와 잘 맞는 (달지 않은)[v:QuerySweetness:달다] 와인 제안")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571965771307)
+}

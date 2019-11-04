@@ -1,0 +1,4 @@
+enum (QueryBody) {
+  description (맛종류)
+  symbol (바디감)
+}

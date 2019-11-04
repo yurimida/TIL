@@ -1,0 +1,3 @@
+integer (WineTasteBody) {
+  description (와인 바디)
+}

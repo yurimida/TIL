@@ -1,0 +1,23 @@
+capsule {
+  id (winery.winery)
+  version (0.0.15)
+  format (3)
+  targets {
+    target (bixby-mobile-ko-KR)
+  }
+  permissions {
+    bixby-user-id-access
+  }
+  runtime-flags {
+    allow-dialogs-on-detail-pages
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    modern-default-view-behavior
+    support-halt-effect-in-computed-inputs
+    no-filtering-with-validation
+    use-input-views-for-selection-list-detail
+  }
+  store-sections {
+    section (FoodAndDrink)  
+  }
+}

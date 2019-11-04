@@ -1,0 +1,15 @@
+action (AddMyWine) {
+  description (Add wine to my wine list)
+  collect {
+    input (addwineid) {
+      type (WineId)
+      min (Optional) max (One)
+    }
+    input (wineinmylist) {
+      type (WineInMyList)
+      min (Optional) max (One)
+    }
+  }
+  type (Search)
+  output (AddOneWine)
+}

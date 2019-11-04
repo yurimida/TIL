@@ -1,0 +1,3 @@
+integer (WineTasteSweetness) {
+  description (__DESCRIPTION__)
+}

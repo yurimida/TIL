@@ -1,0 +1,3 @@
+text (CommentContent) {
+  description (__DESCRIPTION__)
+}

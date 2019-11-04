@@ -1,0 +1,24 @@
+input-view {
+  match: QueryFoodCategory (foods) { 
+        to-input: QueryMakeWineFood
+  }  
+  message ("어떤 종류의 음식인가요?")
+
+  render {
+    // used to iterate over the list of candidates
+    selection-of (foods) {
+      where-each (one) {
+        // you can use conditional logic to control how candidates are displayed, using either a standard layout with a match pattern, or a layout macro
+        cell-card {
+          slot2 {
+            content {
+              primary {
+                template ("#{value (one)}")
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

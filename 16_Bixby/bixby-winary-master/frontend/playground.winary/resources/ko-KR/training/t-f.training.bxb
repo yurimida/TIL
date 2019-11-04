@@ -1,0 +1,95 @@
+train (t-f2zh7lg412a0yfrjcosrg7n7g) {
+  utterance ("[g:OneWine](스페인산)[v:QueryRegion:스페인] (화이트)[v:QueryType:화이트와인] 목록")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571938775581)
+}
+train (t-f5l4gqk3jve1zzdjilf2jibwb) {
+  utterance ("[g:OneWine](쌉쌀한)[v:QuerySweetness:쓰다] (화이트)[v:QueryType:화이트와인] 찾아주세요")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLSmHKBpUAypLIglUEXhyRIZ3B5ampJXmpxcXBJUWlySWlRKoMGDuW+idmpKFoYFHCoRKhQJaQiODkfaCUbAyMDEwMzAwsDK5DNAOQxgnksQJoBzIcAZiBmBapkAAA=)
+  last-modified (1571965094649)
+}
+train (t-fepwf7ce7uiozhintl8h8co9c) {
+  utterance ("[g:OneWine](망고)[v:QueryFoodCategory:과일]랑 같이 마실 (주정강화와인)[v:QueryType:주정강화] 출력")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571964631675)
+}
+train (t-fgqs3kj8xyytjdqsa1o107hgm) {
+  utterance ("[g:OneWine](프렌치산)[v:QueryRegion:프랑스](단)[v:QuerySweetness:달다]출력해줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963409085)
+}
+train (t-fgtvnaxdgz4yj28k26dn4o2qz) {
+  utterance ("[g:OneWine](코다리찜)[v:QueryFoodCategory:'흰 살 생선']랑 어울리는 (독일)[v:QueryRegion:독일]와인 제안")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962550729)
+}
+train (t-fgy6g47y9df21ape6yxdbfzvh) {
+  utterance ("[g:OneWine](드라이)[v:QuerySweetness:드라이] (로제 와인)[v:QueryType:로제와인] 보여주세요")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLSmHKBpUAypLIglUEXhyRIZ3B5ampJXmpxcXBJUWlySWlRKoMGDuW+idmpKFoYFHCoRKhQJaQiODkfaCUbAyMDEwMzAwsDK5DNAOQxgnksQJoBzIcAZiBmBapkAAA=)
+  last-modified (1571965381648)
+}
+train (t-fkxufnuvjk622envd5w65wazr) {
+  utterance ("[g:OneWine](찜닭)[v:QueryFoodCategory:'흰 육류']과 같이 마실 (드라이)[v:QuerySweetness:드라이] 와인 알려주세요")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571966293323)
+}
+train (t-flqulrxtrffkbnoa3te32zfn5) {
+  utterance ("[g:OneWine](파마산)[v:QueryFoodCategory:치즈]랑 어울리는 (칠레산)[v:QueryRegion:칠레]와인 알려주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962841135)
+}
+train (t-fnmo5c0hetyvf458ihv0dcv7d) {
+  utterance ("[g:OneWine](USA)[v:QueryRegion:미국](무거운)[v:QueryBody:바디감]와인 찾아")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQQOHNEivU35KZXBJUWlySWlRKoMyDpW+idmpMNUM0jgUgSUV8EgGJ+cD7WBjYGRgYmBmYGFgBbIZgDxGMI8FSDOA+RDADMSsQJUMAA==)
+  last-modified (1571963261489)
+}
+train (t-fp3gog3191rycc76wfrvewy8m) {
+  utterance ([g:AddOneWine] 내와인)
+  plan (Y2BkkCnISaxML8ovzUvRK8/MSy2q1HNMSfHPSw0HchhAgBFEAAA=)
+  last-modified (1571979447257)
+}
+train (t-fqs2lwnuvntoerili4k975jlx) {
+  utterance ("[g:OneWine](닭볶음탕)[v:QueryFoodCategory:'흰 육류']이랑 곁들일 (달달)[v:QuerySweetness:달다] 와인 보여줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571966138231)
+}
+train (t-frbxhzp4urq9rrn7cwmcxzkxu) {
+  utterance ("[g:OneWine](바디감 있는)[v:QueryBody:바디감] (씁쓸한)[v:QuerySweetness:쓰다]보여줘")
+  plan (Y+BikCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHIamHKBpUASJOmUn1IZXFJUmlxSWpTKoIxDpW9idipMNYM0DkVgSQU8ksHJ+UA7dPG4Jrg8NbUkL7W4GOEkDQJOgmvBaTVChSohFRAXcjIwMjAxMDOwMLAysDGwM3AARRigYsxAGiTGDqQZwJgBiWYGYhagegYA)
+  last-modified (1571963990863)
+}
+train (t-frc7m3p08xwxvtqnqrem3mh9s) {
+  utterance ("[g:OneWine](달짝지근)[v:QuerySweetness:달다] (가자미찜)[v:QueryFoodCategory:'흰 살 생선']과 곁들일 와인 보여줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571966455647)
+}
+train (t-ftfrqdyvn6e65202a25k29t46) {
+  utterance ("[g:OneWine](가벼운데)[v:QueryBody:바디감] (드라이)[v:QuerySweetness:드라이] 와인뭐있어요")
+  plan (Y+BikCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHIamHKBpUASJOmUn1IZXFJUmlxSWpTKoIxDpW9idipMNYM0DkVgSQU8ksHJ+UA7dPG4Jrg8NbUkL7W4GOEkDQJOgmvBaTVChSohFRAXcjIwMjAxMDOwMLAysDGwM3AARRigYsxAGiTGDqQZwJgBiWYGYhagegYA)
+  last-modified (1571964089278)
+}
+train (t-ftuvo80xywkrbuyvxv9eg5krp) {
+  utterance ("[g:OneWine](이태리)[v:QueryRegion:이탈리아] (레드)[v:QueryType:레드와인] 리스트")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571938655439)
+}
+train (t-fvg85tx2cyo0df6jto0365qed) {
+  utterance ("[g:OneWine](쓴데)[v:QuerySweetness:쓰다] (감자)[v:QueryFoodCategory:채소]와 곁들일 와인 찾아줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571966718640)
+}
+train (t-fvmthv1qjt4kkc42sb1ur4nxi) {
+  utterance ("[g:OneWine](오리)[v:QueryFoodCategory:'흰 육류']랑 잘 맞는 (씁쌀한)[v:QuerySweetness:쓰다] 와인 제안")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571966214539)
+}
+train (t-fybb33h8cutxgv7fxvjmlm7yl) {
+  utterance ("[g:OneWine](드라이)[v:QuerySweetness:드라이](남아프리카공화국)[v:QueryRegion:남아프리카공화국]와인 추천")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963867884)
+}
+train (t-fz9aca1w724d92lzhwk0pyulv) {
+  utterance ("[g:OneWine](훈제오리)[v:QueryFoodCategory:'훈제/염장']랑 같이 마실 (달달한)[v:QuerySweetness:달다] 와인 목록")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571965871449)
+}

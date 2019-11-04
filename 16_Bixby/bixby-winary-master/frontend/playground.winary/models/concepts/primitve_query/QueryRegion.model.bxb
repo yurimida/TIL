@@ -1,0 +1,15 @@
+enum (QueryRegion) {
+  description (__DESCRIPTION__)
+  symbol (캐나다)
+  symbol (프랑스)
+  symbol (스페인)
+  symbol (호주)
+  symbol (칠레)
+  symbol (미국)
+  symbol (아르헨티나)
+  symbol (남아프리카공화국)
+  symbol (이탈리아)
+  symbol (독일)
+  symbol (포르투갈)
+  symbol (뉴질랜드)
+}

@@ -1,0 +1,45 @@
+train (t-7451p2b14za8rl00f27goomgl) {
+  utterance ("[g:OneWine](천조국)[v:QueryRegion:미국] (화이트 와인)[v:QueryType:화이트와인] 출력")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571938931531)
+}
+train (t-789w5jm7t0zzx1cu4a3v8hs3b) {
+  utterance ("[g:OneWine](연어스테이크)[v:QueryFoodCategory:'흰 살 생선']랑 어울리는 (칠레산)[v:QueryRegion:칠레]와인 알려주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962546848)
+}
+train (t-7ay9szfd5ipqfgfwb30lj706s) {
+  utterance ("[g:OneWine] (호주)[v:QueryRegion:호주] 와인 찾아줘")
+  plan (Y2BmkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PgYmBEYgZgCQjAwgwQTAA)
+  last-modified (1571913612415)
+}
+train (t-7bz8fqmuyi4kv8348olrtmbsm) {
+  utterance ("[g:OneWine](가벼운)[v:QueryBody:바디감] (이태리)[v:QueryRegion:이탈리아]와인 알려줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQQOHNEivU35KZXBJUWlySWlRKoMyDpW+idmpMNUM0jgUgSUV8EgGJ+cD7WBjYGRgYmBmYGFgBbIZgDxGMI8FSDOA+RDADMSsQJUMAA==)
+  last-modified (1571963014138)
+}
+train (t-7dox7jx0si13gt6b091ue0z9b) {
+  utterance ("[g:OneWine](치킨)[v:QueryFoodCategory:'흰 육류']이랑 어울리는 (이태리)[v:QueryRegion:이탈리아]와인 보여주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962670851)
+}
+train (t-7dq6s253e5a5g0wl9usqzjbdl) {
+  utterance ("[g:OneWine](삼계탕)[v:QueryFoodCategory:'흰 육류']과 잘 맞는 (화이트)[v:QueryType:화이트와인] 찾아줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571964967054)
+}
+train (t-7sxcd3kr6s5lpl3wrwkuff430) {
+  utterance ("[g:OneWine](연어초밥)[v:QueryFoodCategory:'흰 살 생선']과 같이 마실 (탄산 와인)[v:QueryType:스파클링] 보여줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571964529083)
+}
+train (t-7ua2ue9rde0cu5n9xehtrjs54) {
+  utterance ("[g:OneWine](가볍고)[v:QueryBody:바디감](쌉쌀한)[v:QuerySweetness:쓰다]추천해")
+  plan (Y+BikCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHIamHKBpUASJOmUn1IZXFJUmlxSWpTKoIxDpW9idipMNYM0DkVgSQU8ksHJ+UA7dPG4Jrg8NbUkL7W4GOEkDQJOgmvBaTVChSohFRAXcjIwMjAxMDOwMLAysDGwM3AARRigYsxAGiTGDqQZwJgBiWYGYhagegYA)
+  last-modified (1571964020887)
+}
+train (t-7z3c9i2nbiq6p0isjj05j0545) {
+  utterance ("[g:OneWine](에스파냐산)[v:QueryRegion:스페인] (레드와인)[v:QueryType:레드와인] 찾아줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571938691325)
+}

@@ -1,0 +1,65 @@
+train (t-x02ncwoe4bam17cuu57zh1iig) {
+  utterance ("[g:OneWine](망고)[v:QueryFoodCategory:과일]와 어울리는 (레드 와인)[v:QueryType:레드와인] 출력")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571964583938)
+}
+train (t-x3ss4u8xcvq3w2fzdm09sr3u7) {
+  utterance ("[g:OneWine](드라이한)[v:QuerySweetness:드라이] (화이트 와인)[v:QueryType:화이트와인] 리스트")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLSmHKBpUAypLIglUEXhyRIZ3B5ampJXmpxcXBJUWlySWlRKoMGDuW+idmpKFoYFHCoRKhQJaQiODkfaCUbAyMDEwMzAwsDK5DNAOQxgnksQJoBzIcAZiBmBapkAAA=)
+  last-modified (1571965364742)
+}
+train (t-x4v4zjoresdmi561h3j3znwev) {
+  utterance ("[g:OneWine](전어)[v:QueryFoodCategory:'붉은 살 생선']랑 함께마실 (독일)[v:QueryRegion:독일]와인 리스트")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962603308)
+}
+train (t-x5yzgn6ppqdt8tkvqjqwl5hzy) {
+  utterance ("[g:OneWine](돈가스)[v:QueryFoodCategory:'붉은 육류']랑 어울리는 (포르투갈)[v:QueryRegion:포르투갈]와인 목록보여줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962672842)
+}
+train (t-x97wmgy7p418ttztou8uevn5u) {
+  utterance ("[g:OneWine](돼지고기)[v:QueryFoodCategory:'붉은 육류']와 곁들일 (로제 와인)[v:QueryType:로제와인] 목록")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571964978762)
+}
+train (t-xbnk2uzz78i9sbakosga4txlp) {
+  utterance ("[g:OneWine](가벼운)[v:QueryBody:바디감] (씁쌀한)[v:QuerySweetness:쓰다] 알려주라")
+  plan (Y+BikCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHIamHKBpUASJOmUn1IZXFJUmlxSWpTKoIxDpW9idipMNYM0DkVgSQU8ksHJ+UA7dPG4Jrg8NbUkL7W4GOEkDQJOgmvBaTVChSohFRAXcjIwMjAxMDOwMLAysDGwM3AARRigYsxAGiTGDqQZwJgBiWYGYhagegYA)
+  last-modified (1571964009168)
+}
+train (t-xheiepp3ingqjc6k741u5mhvp) {
+  utterance ("[g:OneWine](에담)[v:QueryFoodCategory:치즈]과 함께 마실 (단)[v:QuerySweetness:달다] 와인 찍어줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQReHIpAJweWpqSV5qcXFwSVFpcklpUWpDBo4lPsmZqeiaGFQwKESoUKVkIrg5HyglWwMjAxMDMwMLAysQDYDkMcI5rEAaQYwHwKYgZgJqIYBAA==)
+  last-modified (1571966254819)
+}
+train (t-xjtipzcb5horj79i81t5k41wb) {
+  utterance ("[g:OneWine](오스트레일리아)[v:QueryRegion:호주](씁쓸한)[v:QuerySweetness:쓰다]와인 출력해줘")
+  plan (Y2BnkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQReHNEhvcHlqakleanFxcElRaXJJaVEqgwYO5b6J2akoWhgUcKhEqFAlpCI4OR9oJRsDIwMTAzMDCwMrkM0A5DGCeSxAmgHMhwBmIGYCqmEAAA==)
+  last-modified (1571963523651)
+}
+train (t-xlah6zf318j4bp6bpbnhevhcs) {
+  utterance ("[g:OneWine](케이크)[v:QueryFoodCategory:밀가루]랑 어울리는 (남아프리카공화국)[v:QueryRegion:남아프리카공화국]와인 추천")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962922343)
+}
+train (t-xpqgyco6b1au1k1uezgzll6nd) {
+  utterance ("[g:OneWine](해물찜)[v:QueryFoodCategory:해산물]과 곁들일 (미국)[v:QueryRegion:미국]와인 뭐있어요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRaHoqDU9Mz8PAZmBkYGJiDJAKRBEAJAfLAoAA==)
+  last-modified (1571962451391)
+}
+train (t-xt1plfwu1z98acoeut7s8uvc5) {
+  utterance ("[g:OneWine](훈제연어)[v:QueryFoodCategory:'훈제/염장']와 곁들일 (로제와인)[v:QueryType:로제와인] 찾아주세요")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571964791864)
+}
+train (t-xv19p8xylxr7bgmqh4rhlyjl7) {
+  utterance ("[g:OneWine](아메리카산)[v:QueryRegion:미국] (주정강화와인)[v:QueryType:주정강화] 리스트")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHKymHKBpUAyKDU9Mz+PQRqHdEhlQSoDMwMjAxOQZADSIAgBID5YFAA=)
+  last-modified (1571938935189)
+}
+train (t-xxzrylxunu5nc9z0qkwd2dc70) {
+  utterance ("[g:OneWine](파마산)[v:QueryFoodCategory:치즈]이랑 곁들일 (주정 강화 와인)[v:QueryType:주정강화] 찍어줘")
+  plan (Y2BhkCzISaxML8ovzUvRK8/MSy2q1PPPSw0HshikMKXcMvNSwHLKmHKBpUDSLT8/xTmxJDU9v6iSQRqHopDKglQGZgZGBiYgyQCkQRACQHywKAA=)
+  last-modified (1571965011000)
+}

@@ -1,0 +1,472 @@
+layout-macro-def (wine-details) {
+	params {
+		param (wine) {
+			type (OneWine)
+			min (Required) max (One)
+		}
+	}
+	content {
+		section {
+			content {
+				// wine name
+				title-area {
+					halign (Start)
+					slot1 {
+						text {
+							value ("#{value(wine.wineenname)}")
+							style (Title_XS)
+						}
+					}
+					slot2 {
+						single-line {
+							text {
+								value ("#{value(wine.winekrname)}")
+								style (Detail_M)
+							}
+						}
+					}
+				}
+				// favorite wines
+				attribution-link {
+					label {
+						if (wine.wineinmylist) {
+							template ("와인 즐겨찾기 제거")
+						} else {
+							template ("와인 즐겨찾기 추가")
+						}
+					}
+					intent {
+						goal: AddMyWine
+						value: $expr(wine.wineid)
+						value: $expr(wine.wineinmylist)
+					}			
+				}
+				divider
+        //wine brand
+				if (exists(wine.winebrand)) {
+					hbox {
+						content {
+							vbox {
+								content {
+									single-line {
+										text {
+											value("Brand ")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+							vbox {
+								content {
+									single-line {
+										text {
+											value("#{value(wine.winebrand)}")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+        // wine bottle size
+        if (exists(wine.winesize)) {
+					hbox {
+						content {
+							vbox {
+								content {
+									single-line {
+										text {
+											value("Bottle Size ")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+							vbox {
+								content {
+									single-line {
+										text {
+											value("#{value(wine.winesize)}")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+        // alcohol
+				if (exists(wine.winealcohol)) {
+					hbox {
+						content {
+							vbox {
+								content {
+									single-line {
+										text {
+											value("Alcohol ")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+							vbox {
+								content {
+									single-line {
+										text {
+											value("#{value(wine.winealcohol)}%")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+        // temperature
+				if (exists(wine.winetemperature)) {
+					hbox {
+						content {
+							vbox {
+								content {
+									single-line {
+										text {
+											value("Temperature ")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+							vbox {
+								content {
+									single-line {
+										text {
+											value("#{value(wine.winetemperature)}")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+        // category
+        if (exists(wine.winecategory)) {
+					hbox {
+						content {
+							vbox {
+								content {
+									single-line {
+										text {
+											value("Categories ")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+							vbox {
+								content {
+									single-line {
+										text {
+											value("#{value(wine.winecategory)}")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+        // region
+        if (exists(wine.wineregion)) {
+					hbox {
+						content {
+							vbox {
+								content {
+									single-line {
+										text {
+											value("Region ")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+							vbox {
+								content {
+									single-line {
+										text {
+											value("#{value(wine.wineregion)}")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+        // varietal
+				if (exists(wine.winevarietal)) {
+					hbox {
+						content {
+							vbox {
+								content {
+									single-line {
+										text {
+											value("Varietal ")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+							vbox {
+								content {
+									single-line {
+										text {
+											value("#{value(wine.winevarietal)}")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+        // sweetness
+         if (exists(wine.winetastesweetness)) {
+					hbox {
+						content {
+							vbox {
+								content {
+									single-line {
+										text {
+											value("Sweetness ")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+							vbox {
+								content {
+									single-line {
+										text {
+											value("#{value(wine.winetastesweetness)}")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+        // tastebody
+        if (exists(wine.winetastebody)) {
+					hbox {
+						content {
+							vbox {
+								content {
+									single-line {
+										text {
+											value("Body")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+							vbox {
+								content {
+									single-line {
+										text {
+											value("#{value(wine.winetastebody)}")
+											style(Detail_M_Soft)
+										}
+									}
+								}
+							}
+						}
+					} 
+				}
+        // description
+				paragraph {
+          value ("#{value(wine.winedescription)}")
+          style (Detail_M_Soft)
+        }
+				divider
+
+				// Food Pairing
+				if (exists(wine.winefood)) {
+					single-line {
+						text {
+									style (Title_XS)
+									value ("Food Pairing")
+								}
+					}
+				}
+				for-each (wine.winefood) {
+					as (food) {
+						if (food == '해산물') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/smoked.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)}")
+												secondary ("굴, 오징어, 새우 요리 등") 
+										}
+									}
+								}	
+						} else-if (food == '흰 살 생선') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/white_fish.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)} ") 
+												secondary ("연어, 광어, 메로 요리 등") 
+										}
+									}
+								}								
+						} else-if (food == '붉은 살 생선') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/red_fish.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)} ") 
+												secondary ("고등어, 참치, 방어 요리 등") 
+										}
+									}
+								}									
+						} else-if (food == '흰 육류') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/white_meat.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)}") 
+												secondary ("닭, 오리 요리 등") 
+										}
+									}	
+							}
+						} else-if (food == '붉은 육류') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/red_meat.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)}") 
+												secondary ("소, 돼지, 양 요리 등 ") 
+										}
+									}
+								}	
+						} else-if (food == '과일') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/fruits.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)}") 
+												secondary ("메론, 올리브, 오렌지 등 ") 
+										}
+									}
+							}
+						} else-if (food == '채소') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/vegetables.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)}") 
+												secondary ("토마토, 가지, 아스파라거스 등 ") 
+										}
+									}
+							}
+						} else-if (food == '치즈') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/cheese.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)}")
+												secondary ("모짜렐라, 리코타, 체다 등") 
+										}
+									}	
+							}
+						} else-if (food == '밀가루') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/flour.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)}") 
+												secondary ("피자, 스파게티, 빵 요리 등") 
+										}
+									}	
+								}	
+						} else-if (food == '훈제/염장') {
+							cell-card {
+								slot1 {
+									image {
+											url (/images/smoked.png)
+											shape (Square)
+									}
+								}
+								slot2 {
+										content {
+												order (PrimarySecondary)
+												primary ("#{value(food)}") 
+												secondary ("살라미, 소세지, 훈제구이 등") 
+										}
+									}	
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+}

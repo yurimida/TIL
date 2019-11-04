@@ -1,0 +1,10 @@
+action (FindComment) {
+  description (__DESCRIPTION__)
+  collect {
+    input (wineid) {
+      type (WineId)
+      min (Required) max (One)
+    }
+  }
+  output (WineComment)
+}

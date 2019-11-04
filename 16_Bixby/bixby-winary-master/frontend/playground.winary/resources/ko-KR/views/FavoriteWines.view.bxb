@@ -1,0 +1,43 @@
+result-view{
+	match: AddOneWine(this)
+	
+	message {
+		template ("나의 와인 리스트"){
+			speech ("나의 와인 리스트입니다")
+		}
+	}
+	render {
+		if ("size(this) > 1") {
+					list-of (this) {
+							where-each (wine) {
+									layout-macro (wine-image-card) {
+											param (wine) {
+													expression (wine)
+											}
+									}
+							}
+					}
+			} else-if ("size(this) == 1") {
+					layout {
+							layout-macro (wine-image-carousel) {
+									param (wine) {
+											expression (this)
+									}
+							}
+							layout-macro (wine-details) {
+									param (wine) {
+											expression (this)
+									}
+							}
+					}
+			} else-if (!exists(this)) {
+				layout {
+						layout-macro (no-result) {
+							param(wine) {
+							}
+					}
+				}
+			}
+	} 
+
+}
