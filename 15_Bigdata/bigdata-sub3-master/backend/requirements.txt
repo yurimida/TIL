@@ -16,7 +16,7 @@ django-debug-toolbar==1.11
 django-extensions==2.1.6
 django-imagekit==4.0.2
 django-pandas==0.6.1
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 djangorestframework-jwt==1.11.0
 entrypoints==0.3
 Faker==1.0.4
